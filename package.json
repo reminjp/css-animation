@@ -1,0 +1,66 @@
+{
+  "name": "css-animation",
+  "version": "0.0.0",
+  "description": "My works of CSS animation.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rdrgn/css-animation.git"
+  },
+  "license": "UNLICENSED",
+  "author": "remin",
+  "scripts": {
+    "build": "rm -rf dist && webpack",
+    "format": "prettier && fix",
+    "lint": "eslint --ext .js,.json,.jsx,.ts,.tsx --ignore-path .gitignore .",
+    "lint-fix": "eslint --fix --ext .js,.json,.jsx,.ts,.tsx --ignore-path .gitignore .",
+    "prettier": "prettier --write --ignore-path .gitignore \"**/*.{html,js,json,jsx,md,ts,tsx}\"",
+    "sort-package-json": "sort-package-json",
+    "start": "webpack-dev-server"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{?(s)css,htm?(l),json,md,y?(a)ml}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.{js?(x),ts?(x)}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "prop-types": "15.7.2",
+    "react": "16.12.0",
+    "react-dom": "16.12.0"
+  },
+  "devDependencies": {
+    "@types/prop-types": "15.7.3",
+    "@types/react": "16.9.18",
+    "@types/react-dom": "16.9.5",
+    "@typescript-eslint/eslint-plugin": "2.17.0",
+    "@typescript-eslint/parser": "2.17.0",
+    "css-loader": "3.4.2",
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "6.9.0",
+    "eslint-loader": "3.0.3",
+    "eslint-plugin-import": "2.20.0",
+    "eslint-plugin-prettier": "3.1.2",
+    "eslint-plugin-react": "7.18.0",
+    "file-loader": "5.0.2",
+    "gh-pages": "2.2.0",
+    "html-webpack-plugin": "3.2.0",
+    "husky": "4.0.10",
+    "lint-staged": "10.0.1",
+    "prettier": "1.19.1",
+    "sort-package-json": "1.39.0",
+    "ts-loader": "6.2.1",
+    "typescript": "3.7.5",
+    "webpack": "4.41.5",
+    "webpack-cli": "3.3.10",
+    "webpack-dev-server": "3.10.1"
+  }
+}
