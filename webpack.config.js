@@ -47,6 +47,10 @@ module.exports = {
         use: 'ts-loader',
       },
       {
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+      {
         test: /\.html$/,
         include: [path.resolve(__dirname, worksDir)],
         use: [

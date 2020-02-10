@@ -23,6 +23,7 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': 'error',
     'no-var': 'error',
     'import/order': 'error',
+    'react/prop-types': 'off',
   },
   settings: {
     'import/resolver': {
