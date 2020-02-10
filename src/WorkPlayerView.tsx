@@ -10,6 +10,12 @@ interface Props {
 }
 
 export const WorkPlayerView: React.FC<Props> = props => {
+  const iframeRef = React.useRef<HTMLIFrameElement>();
+
+  const handleReload = React.useCallback(() => {
+    iframeRef.current?.contentDocument.location.reload();
+  }, [iframeRef]);
+
   return (
     <div className="work-player">
       <div className="work-player__header">
@@ -18,12 +24,13 @@ export const WorkPlayerView: React.FC<Props> = props => {
           {props.work?.date}
         </div>
         <div className="work-player__reload">
-          <button>
+          <button onClick={handleReload}>
             <FontAwesomeIcon icon="redo" size="lg" />
           </button>
         </div>
       </div>
       <iframe
+        ref={iframeRef}
         className="work-player__iframe"
         src={props.work?.pageSrc}
       ></iframe>
