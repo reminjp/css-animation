@@ -10,7 +10,7 @@ body {
   margin: 0;
   background-color: $color-background;
   color: $color-text;
-  font-family: $font-family-sans-serif;
+  font-family: $font-family-monospace;
   font-size: $length-text;
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
@@ -19,6 +19,25 @@ body {
 a {
   color: $color-text;
   text-decoration: none;
+  transition: color $time-transition ease;
+
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+button {
+  cursor: pointer;
+  appearance: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  color: $color-text;
+  text-decoration: none;
+  font-family: $font-family-monospace;
+  font-size: $length-text;
   transition: color $time-transition ease;
 
   &:hover {
