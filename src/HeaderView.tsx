@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './HeaderView.scss';
 
 export const HeaderView: React.FC = () => {
@@ -8,7 +9,9 @@ export const HeaderView: React.FC = () => {
         <span className="header__brand">CSS Animations</span> by remin
       </div>
       <div>
-        <a href="https://github.com/rdrgn/css-animation">GitHub</a>
+        <a href="https://github.com/rdrgn/css-animation">
+          <FontAwesomeIcon icon={['fab', 'github']} size="lg" />
+        </a>
       </div>
     </div>
   );

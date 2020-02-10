@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Work } from './Work';
 import './WorkPlayerView.scss';
 
@@ -16,8 +17,10 @@ export const WorkPlayerView: React.FC<Props> = props => {
           <span className="work-player__name">{props.work?.name}</span>{' '}
           {props.work?.date}
         </div>
-        <div>
-          <button>Reload</button>
+        <div className="work-player__reload">
+          <button>
+            <FontAwesomeIcon icon="redo" size="lg" />
+          </button>
         </div>
       </div>
       <iframe
