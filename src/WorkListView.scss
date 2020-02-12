@@ -15,6 +15,10 @@
     transition: background-color $time-transition ease,
       color $time-transition ease;
 
+    &--active {
+      color: $color-primary;
+    }
+
     &:hover {
       background-color: $color-primary;
       color: $color-background;
