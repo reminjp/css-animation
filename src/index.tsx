@@ -32,7 +32,11 @@ const App: React.FC<Props> = props => {
         <HeaderView />
       </div>
       <div className="app__sidebar">
-        <WorkListView works={props.works} onClick={setWorkWithName} />
+        <WorkListView
+          works={props.works}
+          activeWorkName={work.name}
+          onClick={setWorkWithName}
+        />
       </div>
       <div className="app__main">
         <WorkPlayerView
