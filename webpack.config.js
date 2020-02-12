@@ -19,7 +19,7 @@ const works = fs
     ...require(path.resolve(__dirname, worksDir, name, 'work.json')),
     ...{
       name,
-      pageSrc: path.join(worksDir, name),
+      pageSrc: path.join(worksDir, name, 'index.html'),
       thumbnailSrc: path.join(worksDir, name, 'thumbnail.png'),
     },
   }));
