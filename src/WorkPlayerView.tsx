@@ -5,8 +5,6 @@ import './WorkPlayerView.scss';
 
 interface Props {
   work?: Work;
-  visible?: boolean;
-  handleClose(): void;
 }
 
 export const WorkPlayerView: React.FC<Props> = props => {

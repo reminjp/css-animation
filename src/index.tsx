@@ -17,7 +17,6 @@ interface Props {
 
 const App: React.FC<Props> = props => {
   const [work, setWork] = React.useState<Work>(props.works[0]);
-  const [playerVisible, setPlayerVisible] = React.useState(false);
 
   const setWorkWithName = React.useCallback(
     (name: string) => {
@@ -39,11 +38,7 @@ const App: React.FC<Props> = props => {
         />
       </div>
       <div className="app__main">
-        <WorkPlayerView
-          work={work}
-          visible={playerVisible}
-          handleClose={() => setPlayerVisible(false)}
-        />
+        <WorkPlayerView work={work} />
       </div>
     </div>
   );
