@@ -11,6 +11,7 @@
   "scripts": {
     "build": "rm -rf dist && webpack",
     "format": "yarn run sort-package-json && yarn run prettier && yarn run lint-fix",
+    "gh-pages": "yarn build && gh-pages -d dist",
     "lint": "eslint --ext .js,.json,.jsx,.ts,.tsx --ignore-path .gitignore .",
     "lint-fix": "eslint --fix --ext .js,.json,.jsx,.ts,.tsx --ignore-path .gitignore .",
     "prettier": "prettier --write --ignore-path .gitignore \"**/*.{css,html,js,json,jsx,md,ts,tsx}\"",
