@@ -28,6 +28,7 @@ export const WorkPlayerView: React.FC<Props> = props => {
         </div>
       </div>
       <iframe
+        key={props.work?.name}
         ref={iframeRef}
         className="work-player__iframe"
         src={props.work?.pageSrc}
