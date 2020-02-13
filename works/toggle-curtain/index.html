@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="remin" />
+    <style>
+      body {
+        --duration: 0.2s;
+        --w: 32vh;
+        --h: 18vh;
+        --m: 0.5vh;
+        --r: 0.5vh;
+        --color-window: #ffffff;
+        --color-curtain: #424242;
+        --color-rail: #bdbdbd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f5f5f5;
+      }
+
+      .curtain {
+        cursor: pointer;
+      }
+
+      .checkbox {
+        display: none;
+      }
+
+      .inner {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        width: var(--w);
+        height: var(--h);
+        border-top: var(--r) solid var(--color-rail);
+        cursor: pointer;
+      }
+
+      .background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -2;
+        background-color: rgba(0, 0, 0, 10%);
+        transition: background-color var(--duration) ease;
+      }
+
+      .window {
+        position: absolute;
+        top: var(--m);
+        left: var(--m);
+        right: var(--m);
+        bottom: var(--m);
+        z-index: -1;
+        background-color: var(--color-window);
+      }
+
+      .left,
+      .right {
+        display: flex;
+        width: 50%;
+        background-color: var(--color-curtain);
+        transition: width var(--duration) ease;
+      }
+
+      .left div,
+      .right div {
+        flex-grow: 1;
+        transition: background-color var(--duration) ease;
+      }
+
+      .left div:nth-child(even),
+      .right div:nth-child(even) {
+        background-color: rgba(0, 0, 0, 5%);
+      }
+
+      .curtain:hover .checkbox:not(:checked) ~ .inner .left,
+      .curtain:hover .checkbox:not(:checked) ~ .inner .right {
+        width: 47.5%;
+      }
+
+      .checkbox:checked ~ .inner .background {
+        background-color: transparent;
+      }
+
+      .checkbox:checked ~ .inner .left,
+      .checkbox:checked ~ .inner .right {
+        width: calc(0.1 * var(--w));
+      }
+
+      .checkbox:checked ~ .inner .left div:nth-child(even),
+      .checkbox:checked ~ .inner .right div:nth-child(even) {
+        background-color: rgba(0, 0, 0, 10%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <label class="curtain">
+      <input type="checkbox" class="checkbox" />
+      <div class="inner">
+        <div class="background"></div>
+        <div class="window"></div>
+        <div class="left">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="right">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </label>
+  </body>
+</html>
