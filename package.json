@@ -1,6 +1,7 @@
 {
   "name": "css-animation",
   "version": "0.0.0",
+  "private": true,
   "description": "My works of CSS animation.",
   "repository": {
     "type": "git",
