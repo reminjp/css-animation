@@ -1,0 +1,92 @@
+$duration: 8s;
+$sun-radius: 4vh;
+$earth-orbit-radius: 10vh;
+$earth-radius: 2vh;
+$moon-orbit-radius: 4vh;
+$moon-radius: 1vh;
+$border-width: 0.5vh;
+$color-orbit: #424242;
+$color-sun: #ffdd57;
+$color-earth: #3298dc;
+$color-moon: #bdbdbd;
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #121212;
+}
+
+.spinner {
+  position: relative;
+}
+
+.sun {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: (2 * $sun-radius);
+  height: (2 * $sun-radius);
+  border-radius: 50%;
+  background-color: $color-sun;
+  transform: translate(-50%, -50%);
+}
+
+.earth {
+  position: absolute;
+  top: ($sun-radius - $earth-orbit-radius);
+  left: $sun-radius;
+  width: (2 * $earth-radius);
+  height: (2 * $earth-radius);
+  border-radius: 50%;
+  background-color: $color-earth;
+  transform: translate(-50%, -50%);
+  transform-origin: center ($earth-radius + $earth-orbit-radius);
+  animation: rotation $duration linear infinite;
+
+  &-orbit {
+    position: absolute;
+    top: $sun-radius;
+    left: $sun-radius;
+    width: (2 * $earth-orbit-radius);
+    height: (2 * $earth-orbit-radius);
+    border-radius: 50%;
+    border: $border-width solid $color-orbit;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.moon {
+  position: absolute;
+  top: ($earth-radius - $moon-orbit-radius);
+  left: $earth-radius;
+  width: (2 * $moon-radius);
+  height: (2 * $moon-radius);
+  border-radius: 50%;
+  background-color: $color-moon;
+  transform: translate(-50%, -50%);
+  transform-origin: center ($moon-radius + $moon-orbit-radius);
+  animation: rotation ($duration / 11) linear infinite;
+
+  &-orbit {
+    position: absolute;
+    top: $earth-radius;
+    left: $earth-radius;
+    width: (2 * $moon-orbit-radius);
+    height: (2 * $moon-orbit-radius);
+    border-radius: 50%;
+    border: $border-width solid $color-orbit;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
