@@ -1,0 +1,43 @@
+$duration: 10s;
+$length-glitch: 2px;
+$color-text: #eeeeee;
+$color-background: #212121;
+
+body {
+  background-color: $color-background;
+  color: $color-text;
+  font-family: 'Monaco', 'Consolas', 'Courier New', 'Courier', 'Yu Gothic',
+    YuGothic, Verdana, Meiryo, monospace;
+  font-size: 64px;
+}
+
+.text {
+  &::before,
+  &::after {
+    content: 'Glitch';
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    padding: $length-glitch;
+    background-color: $color-background;
+  }
+
+  &::before {
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    animation: $duration linear infinite glitch;
+  }
+
+  &::after {
+    z-index: 1;
+    transform: translate(-50%, -50%) translateX($length-glitch);
+  }
+}
+
+@keyframes glitch {
+  @for $i from 0 through 100 {
+    #{$i * 1%} {
+      clip-path: inset((random(100) * 1%) 0 (random(100) * 1%) 0);
+    }
+  }
+}
