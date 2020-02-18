@@ -1,0 +1,123 @@
+@use "sass:math";
+
+$duration: 32 * 40ms;
+$duration-background: $duration / 4;
+$duration-foreground: $duration / 1;
+$size: 50vh;
+$n: 20;
+$ease-in-out-sine: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #121212;
+}
+
+.fms-cat {
+  position: relative;
+  width: $size;
+  height: $size;
+  border: ($size / $n) solid #212121;
+}
+
+.foreground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  // background-image: url('cat.png');
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // transform-origin: center;
+  // animation: (0.5 * $duration-foreground) $ease-in-out-sine
+  //   (-0.5 * $duration-foreground) infinite alternate size-amplification;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: #fff;
+
+  .r,
+  .g,
+  .b {
+    display: grid;
+    grid-template-rows: repeat($n, 1fr);
+    grid-template-columns: repeat($n, 1fr);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    mix-blend-mode: multiply;
+
+    & > * {
+      animation: (0.5 * $duration-background) $ease-in-out-sine infinite
+        alternate fade-in;
+    }
+  }
+
+  .r {
+    & > * {
+      background-color: #0ff;
+    }
+  }
+
+  .g {
+    & > * {
+      background-color: #f0f;
+    }
+  }
+
+  .b {
+    & > * {
+      background-color: #ff0;
+    }
+  }
+
+  @for $i from 0 to $n {
+    @for $j from 0 to $n {
+      $k: $i * $n + $j + 1;
+      $d: math.hypot($n / 2 - ($i + 0.5), $n / 2 - ($j + 0.5)) /
+        (10 / math.$pi);
+
+      .r :nth-child(#{$k}) {
+        animation-delay: ($d - 100) * (0.5 * $duration-background);
+      }
+
+      .g :nth-child(#{$k}) {
+        animation-delay: ($d - 100 + 2 / 3) * (0.5 * $duration-background);
+      }
+
+      .b :nth-child(#{$k}) {
+        animation-delay: ($d - 100 + 4 / 3) * (0.5 * $duration-background);
+      }
+    }
+  }
+}
+
+@keyframes size-amplification {
+  from {
+    transform: scale(0.8 - 1 / 12);
+  }
+  to {
+    transform: scale(0.8 + 1 / 12);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
