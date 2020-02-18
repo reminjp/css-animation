@@ -6,7 +6,7 @@ export const HeaderView: React.FC = () => {
   return (
     <div className="header">
       <div>
-        <span className="header__brand">CSS Animations</span> (c) remin
+        <span className="header__brand">CSS Animation</span> (c) remin
       </div>
       <div>
         <a href="https://github.com/rdrgn/css-animation">
