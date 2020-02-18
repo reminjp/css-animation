@@ -77,14 +77,14 @@ body {
 
 .curtain:hover .checkbox:not(:checked) ~ .inner .left,
 .curtain:hover .checkbox:not(:checked) ~ .inner .right {
-  transform: scaleX(95%);
+  transform: scaleX(0.95);
 }
 .checkbox:checked ~ .inner .background {
   opacity: 0;
 }
 .checkbox:checked ~ .inner .left,
 .checkbox:checked ~ .inner .right {
-  transform: scaleX(20%);
+  transform: scaleX(0.2);
 }
 .checkbox:checked ~ .inner .left div:nth-child(even),
 .checkbox:checked ~ .inner .right div:nth-child(even) {
