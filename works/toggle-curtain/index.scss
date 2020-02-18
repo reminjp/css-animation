@@ -42,8 +42,10 @@ body {
   right: 0;
   bottom: 0;
   z-index: -2;
-  background-color: rgba(0, 0, 0, 10%);
-  transition: background-color $duration ease;
+  background-color: #000000;
+  opacity: 0.1;
+  transition: opacity $duration ease;
+  will-change: opacity;
 }
 
 .window {
@@ -61,7 +63,8 @@ body {
   display: flex;
   width: 50%;
   background-color: $color-curtain;
-  transition: width $duration ease;
+  transition: transform $duration ease;
+  will-change: transform;
 
   div {
     flex-grow: 1;
@@ -73,12 +76,20 @@ body {
   }
 }
 
+.left {
+  transform-origin: top left;
+}
+
+.right {
+  transform-origin: top right;
+}
+
 .checkbox {
   &:not(:checked) {
     .curtain:hover & ~ .inner {
       .left,
       .right {
-        width: 47.5%;
+        transform: scaleX(95%);
       }
     }
   }
@@ -86,12 +97,12 @@ body {
   &:checked {
     & ~ .inner {
       .background {
-        background-color: transparent;
+        opacity: 0;
       }
 
       .left,
       .right {
-        width: (0.1 * $w);
+        transform: scaleX(20%);
 
         div:nth-child(even) {
           background-color: rgba(0, 0, 0, 10%);
