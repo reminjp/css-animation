@@ -1,0 +1,3678 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #121212;
+}
+
+.fms-cat {
+  position: relative;
+  width: 50vh;
+  height: 50vh;
+  border: 2.5vh solid #212121;
+}
+
+.foreground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: #fff;
+}
+.background .r,
+.background .g,
+.background .b {
+  display: grid;
+  grid-template-rows: repeat(20, 1fr);
+  grid-template-columns: repeat(20, 1fr);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  mix-blend-mode: multiply;
+}
+.background .r > *,
+.background .g > *,
+.background .b > * {
+  animation: 160ms cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite alternate
+    fade-in;
+}
+.background .r > * {
+  background-color: #0ff;
+}
+.background .g > * {
+  background-color: #f0f;
+}
+.background .b > * {
+  background-color: #ff0;
+}
+.background .r :nth-child(1) {
+  animation-delay: -15324.6817933999ms;
+}
+.background .g :nth-child(1) {
+  animation-delay: -15218.0151267333ms;
+}
+.background .b :nth-child(1) {
+  animation-delay: -15111.3484600666ms;
+}
+.background .r :nth-child(2) {
+  animation-delay: -15359.2383102234ms;
+}
+.background .g :nth-child(2) {
+  animation-delay: -15252.5716435568ms;
+}
+.background .b :nth-child(2) {
+  animation-delay: -15145.9049768901ms;
+}
+.background .r :nth-child(3) {
+  animation-delay: -15391.6007532397ms;
+}
+.background .g :nth-child(3) {
+  animation-delay: -15284.9340865731ms;
+}
+.background .b :nth-child(3) {
+  animation-delay: -15178.2674199064ms;
+}
+.background .r :nth-child(4) {
+  animation-delay: -15421.400845762ms;
+}
+.background .g :nth-child(4) {
+  animation-delay: -15314.7341790953ms;
+}
+.background .b :nth-child(4) {
+  animation-delay: -15208.0675124287ms;
+}
+.background .r :nth-child(5) {
+  animation-delay: -15448.223272904ms;
+}
+.background .g :nth-child(5) {
+  animation-delay: -15341.5566062373ms;
+}
+.background .b :nth-child(5) {
+  animation-delay: -15234.8899395706ms;
+}
+.background .r :nth-child(6) {
+  animation-delay: -15471.6143744404ms;
+}
+.background .g :nth-child(6) {
+  animation-delay: -15364.9477077737ms;
+}
+.background .b :nth-child(6) {
+  animation-delay: -15258.2810411071ms;
+}
+.background .r :nth-child(7) {
+  animation-delay: -15491.1007766909ms;
+}
+.background .g :nth-child(7) {
+  animation-delay: -15384.4341100243ms;
+}
+.background .b :nth-child(7) {
+  animation-delay: -15277.7674433576ms;
+}
+.background .r :nth-child(8) {
+  animation-delay: -15506.2199810396ms;
+}
+.background .g :nth-child(8) {
+  animation-delay: -15399.553314373ms;
+}
+.background .b :nth-child(8) {
+  animation-delay: -15292.8866477063ms;
+}
+.background .r :nth-child(9) {
+  animation-delay: -15516.562069943ms;
+}
+.background .g :nth-child(9) {
+  animation-delay: -15409.8954032763ms;
+}
+.background .b :nth-child(9) {
+  animation-delay: -15303.2287366097ms;
+}
+.background .r :nth-child(10) {
+  animation-delay: -15521.8169861189ms;
+}
+.background .g :nth-child(10) {
+  animation-delay: -15415.1503194522ms;
+}
+.background .b :nth-child(10) {
+  animation-delay: -15308.4836527855ms;
+}
+.background .r :nth-child(11) {
+  animation-delay: -15521.8169861189ms;
+}
+.background .g :nth-child(11) {
+  animation-delay: -15415.1503194522ms;
+}
+.background .b :nth-child(11) {
+  animation-delay: -15308.4836527855ms;
+}
+.background .r :nth-child(12) {
+  animation-delay: -15516.562069943ms;
+}
+.background .g :nth-child(12) {
+  animation-delay: -15409.8954032763ms;
+}
+.background .b :nth-child(12) {
+  animation-delay: -15303.2287366097ms;
+}
+.background .r :nth-child(13) {
+  animation-delay: -15506.2199810396ms;
+}
+.background .g :nth-child(13) {
+  animation-delay: -15399.553314373ms;
+}
+.background .b :nth-child(13) {
+  animation-delay: -15292.8866477063ms;
+}
+.background .r :nth-child(14) {
+  animation-delay: -15491.1007766909ms;
+}
+.background .g :nth-child(14) {
+  animation-delay: -15384.4341100243ms;
+}
+.background .b :nth-child(14) {
+  animation-delay: -15277.7674433576ms;
+}
+.background .r :nth-child(15) {
+  animation-delay: -15471.6143744404ms;
+}
+.background .g :nth-child(15) {
+  animation-delay: -15364.9477077737ms;
+}
+.background .b :nth-child(15) {
+  animation-delay: -15258.2810411071ms;
+}
+.background .r :nth-child(16) {
+  animation-delay: -15448.223272904ms;
+}
+.background .g :nth-child(16) {
+  animation-delay: -15341.5566062373ms;
+}
+.background .b :nth-child(16) {
+  animation-delay: -15234.8899395706ms;
+}
+.background .r :nth-child(17) {
+  animation-delay: -15421.400845762ms;
+}
+.background .g :nth-child(17) {
+  animation-delay: -15314.7341790953ms;
+}
+.background .b :nth-child(17) {
+  animation-delay: -15208.0675124287ms;
+}
+.background .r :nth-child(18) {
+  animation-delay: -15391.6007532397ms;
+}
+.background .g :nth-child(18) {
+  animation-delay: -15284.9340865731ms;
+}
+.background .b :nth-child(18) {
+  animation-delay: -15178.2674199064ms;
+}
+.background .r :nth-child(19) {
+  animation-delay: -15359.2383102234ms;
+}
+.background .g :nth-child(19) {
+  animation-delay: -15252.5716435568ms;
+}
+.background .b :nth-child(19) {
+  animation-delay: -15145.9049768901ms;
+}
+.background .r :nth-child(20) {
+  animation-delay: -15324.6817933999ms;
+}
+.background .g :nth-child(20) {
+  animation-delay: -15218.0151267333ms;
+}
+.background .b :nth-child(20) {
+  animation-delay: -15111.3484600666ms;
+}
+.background .r :nth-child(21) {
+  animation-delay: -15359.2383102234ms;
+}
+.background .g :nth-child(21) {
+  animation-delay: -15252.5716435568ms;
+}
+.background .b :nth-child(21) {
+  animation-delay: -15145.9049768901ms;
+}
+.background .r :nth-child(22) {
+  animation-delay: -15395.7679204105ms;
+}
+.background .g :nth-child(22) {
+  animation-delay: -15289.1012537438ms;
+}
+.background .b :nth-child(22) {
+  animation-delay: -15182.4345870771ms;
+}
+.background .r :nth-child(23) {
+  animation-delay: -15430.201345756ms;
+}
+.background .g :nth-child(23) {
+  animation-delay: -15323.5346790894ms;
+}
+.background .b :nth-child(23) {
+  animation-delay: -15216.8680124227ms;
+}
+.background .r :nth-child(24) {
+  animation-delay: -15462.1358496751ms;
+}
+.background .g :nth-child(24) {
+  animation-delay: -15355.4691830084ms;
+}
+.background .b :nth-child(24) {
+  animation-delay: -15248.8025163418ms;
+}
+.background .r :nth-child(25) {
+  animation-delay: -15491.1007766909ms;
+}
+.background .g :nth-child(25) {
+  animation-delay: -15384.4341100243ms;
+}
+.background .b :nth-child(25) {
+  animation-delay: -15277.7674433576ms;
+}
+.background .r :nth-child(26) {
+  animation-delay: -15516.562069943ms;
+}
+.background .g :nth-child(26) {
+  animation-delay: -15409.8954032763ms;
+}
+.background .b :nth-child(26) {
+  animation-delay: -15303.2287366097ms;
+}
+.background .r :nth-child(27) {
+  animation-delay: -15537.9401744315ms;
+}
+.background .g :nth-child(27) {
+  animation-delay: -15431.2735077649ms;
+}
+.background .b :nth-child(27) {
+  animation-delay: -15324.6068410982ms;
+}
+.background .r :nth-child(28) {
+  animation-delay: -15554.6466907676ms;
+}
+.background .g :nth-child(28) {
+  animation-delay: -15447.9800241009ms;
+}
+.background .b :nth-child(28) {
+  animation-delay: -15341.3133574342ms;
+}
+.background .r :nth-child(29) {
+  animation-delay: -15566.1416185694ms;
+}
+.background .g :nth-child(29) {
+  animation-delay: -15459.4749519027ms;
+}
+.background .b :nth-child(29) {
+  animation-delay: -15352.8082852361ms;
+}
+.background .r :nth-child(30) {
+  animation-delay: -15572.0048391813ms;
+}
+.background .g :nth-child(30) {
+  animation-delay: -15465.3381725146ms;
+}
+.background .b :nth-child(30) {
+  animation-delay: -15358.671505848ms;
+}
+.background .r :nth-child(31) {
+  animation-delay: -15572.0048391813ms;
+}
+.background .g :nth-child(31) {
+  animation-delay: -15465.3381725146ms;
+}
+.background .b :nth-child(31) {
+  animation-delay: -15358.671505848ms;
+}
+.background .r :nth-child(32) {
+  animation-delay: -15566.1416185694ms;
+}
+.background .g :nth-child(32) {
+  animation-delay: -15459.4749519027ms;
+}
+.background .b :nth-child(32) {
+  animation-delay: -15352.8082852361ms;
+}
+.background .r :nth-child(33) {
+  animation-delay: -15554.6466907676ms;
+}
+.background .g :nth-child(33) {
+  animation-delay: -15447.9800241009ms;
+}
+.background .b :nth-child(33) {
+  animation-delay: -15341.3133574342ms;
+}
+.background .r :nth-child(34) {
+  animation-delay: -15537.9401744315ms;
+}
+.background .g :nth-child(34) {
+  animation-delay: -15431.2735077649ms;
+}
+.background .b :nth-child(34) {
+  animation-delay: -15324.6068410982ms;
+}
+.background .r :nth-child(35) {
+  animation-delay: -15516.562069943ms;
+}
+.background .g :nth-child(35) {
+  animation-delay: -15409.8954032763ms;
+}
+.background .b :nth-child(35) {
+  animation-delay: -15303.2287366097ms;
+}
+.background .r :nth-child(36) {
+  animation-delay: -15491.1007766909ms;
+}
+.background .g :nth-child(36) {
+  animation-delay: -15384.4341100243ms;
+}
+.background .b :nth-child(36) {
+  animation-delay: -15277.7674433576ms;
+}
+.background .r :nth-child(37) {
+  animation-delay: -15462.1358496751ms;
+}
+.background .g :nth-child(37) {
+  animation-delay: -15355.4691830084ms;
+}
+.background .b :nth-child(37) {
+  animation-delay: -15248.8025163418ms;
+}
+.background .r :nth-child(38) {
+  animation-delay: -15430.201345756ms;
+}
+.background .g :nth-child(38) {
+  animation-delay: -15323.5346790894ms;
+}
+.background .b :nth-child(38) {
+  animation-delay: -15216.8680124227ms;
+}
+.background .r :nth-child(39) {
+  animation-delay: -15395.7679204105ms;
+}
+.background .g :nth-child(39) {
+  animation-delay: -15289.1012537438ms;
+}
+.background .b :nth-child(39) {
+  animation-delay: -15182.4345870771ms;
+}
+.background .r :nth-child(40) {
+  animation-delay: -15359.2383102234ms;
+}
+.background .g :nth-child(40) {
+  animation-delay: -15252.5716435568ms;
+}
+.background .b :nth-child(40) {
+  animation-delay: -15145.9049768901ms;
+}
+.background .r :nth-child(41) {
+  animation-delay: -15391.6007532397ms;
+}
+.background .g :nth-child(41) {
+  animation-delay: -15284.9340865731ms;
+}
+.background .b :nth-child(41) {
+  animation-delay: -15178.2674199064ms;
+}
+.background .r :nth-child(42) {
+  animation-delay: -15430.201345756ms;
+}
+.background .g :nth-child(42) {
+  animation-delay: -15323.5346790894ms;
+}
+.background .b :nth-child(42) {
+  animation-delay: -15216.8680124227ms;
+}
+.background .r :nth-child(43) {
+  animation-delay: -15466.854047421ms;
+}
+.background .g :nth-child(43) {
+  animation-delay: -15360.1873807543ms;
+}
+.background .b :nth-child(43) {
+  animation-delay: -15253.5207140877ms;
+}
+.background .r :nth-child(44) {
+  animation-delay: -15501.1293308102ms;
+}
+.background .g :nth-child(44) {
+  animation-delay: -15394.4626641435ms;
+}
+.background .b :nth-child(44) {
+  animation-delay: -15287.7959974769ms;
+}
+.background .r :nth-child(45) {
+  animation-delay: -15532.503989474ms;
+}
+.background .g :nth-child(45) {
+  animation-delay: -15425.8373228073ms;
+}
+.background .b :nth-child(45) {
+  animation-delay: -15319.1706561407ms;
+}
+.background .r :nth-child(46) {
+  animation-delay: -15560.3565847292ms;
+}
+.background .g :nth-child(46) {
+  animation-delay: -15453.6899180626ms;
+}
+.background .b :nth-child(46) {
+  animation-delay: -15347.0232513959ms;
+}
+.background .r :nth-child(47) {
+  animation-delay: -15583.9791077632ms;
+}
+.background .g :nth-child(47) {
+  animation-delay: -15477.3124410965ms;
+}
+.background .b :nth-child(47) {
+  animation-delay: -15370.6457744299ms;
+}
+.background .r :nth-child(48) {
+  animation-delay: -15602.6164693682ms;
+}
+.background .g :nth-child(48) {
+  animation-delay: -15495.9498027015ms;
+}
+.background .b :nth-child(48) {
+  animation-delay: -15389.2831360348ms;
+}
+.background .r :nth-child(49) {
+  animation-delay: -15615.5429861341ms;
+}
+.background .g :nth-child(49) {
+  animation-delay: -15508.8763194674ms;
+}
+.background .b :nth-child(49) {
+  animation-delay: -15402.2096528007ms;
+}
+.background .r :nth-child(50) {
+  animation-delay: -15622.1720523077ms;
+}
+.background .g :nth-child(50) {
+  animation-delay: -15515.5053856411ms;
+}
+.background .b :nth-child(50) {
+  animation-delay: -15408.8387189744ms;
+}
+.background .r :nth-child(51) {
+  animation-delay: -15622.1720523077ms;
+}
+.background .g :nth-child(51) {
+  animation-delay: -15515.5053856411ms;
+}
+.background .b :nth-child(51) {
+  animation-delay: -15408.8387189744ms;
+}
+.background .r :nth-child(52) {
+  animation-delay: -15615.5429861341ms;
+}
+.background .g :nth-child(52) {
+  animation-delay: -15508.8763194674ms;
+}
+.background .b :nth-child(52) {
+  animation-delay: -15402.2096528007ms;
+}
+.background .r :nth-child(53) {
+  animation-delay: -15602.6164693682ms;
+}
+.background .g :nth-child(53) {
+  animation-delay: -15495.9498027015ms;
+}
+.background .b :nth-child(53) {
+  animation-delay: -15389.2831360348ms;
+}
+.background .r :nth-child(54) {
+  animation-delay: -15583.9791077632ms;
+}
+.background .g :nth-child(54) {
+  animation-delay: -15477.3124410965ms;
+}
+.background .b :nth-child(54) {
+  animation-delay: -15370.6457744299ms;
+}
+.background .r :nth-child(55) {
+  animation-delay: -15560.3565847292ms;
+}
+.background .g :nth-child(55) {
+  animation-delay: -15453.6899180626ms;
+}
+.background .b :nth-child(55) {
+  animation-delay: -15347.0232513959ms;
+}
+.background .r :nth-child(56) {
+  animation-delay: -15532.503989474ms;
+}
+.background .g :nth-child(56) {
+  animation-delay: -15425.8373228073ms;
+}
+.background .b :nth-child(56) {
+  animation-delay: -15319.1706561407ms;
+}
+.background .r :nth-child(57) {
+  animation-delay: -15501.1293308102ms;
+}
+.background .g :nth-child(57) {
+  animation-delay: -15394.4626641435ms;
+}
+.background .b :nth-child(57) {
+  animation-delay: -15287.7959974769ms;
+}
+.background .r :nth-child(58) {
+  animation-delay: -15466.854047421ms;
+}
+.background .g :nth-child(58) {
+  animation-delay: -15360.1873807543ms;
+}
+.background .b :nth-child(58) {
+  animation-delay: -15253.5207140877ms;
+}
+.background .r :nth-child(59) {
+  animation-delay: -15430.201345756ms;
+}
+.background .g :nth-child(59) {
+  animation-delay: -15323.5346790894ms;
+}
+.background .b :nth-child(59) {
+  animation-delay: -15216.8680124227ms;
+}
+.background .r :nth-child(60) {
+  animation-delay: -15391.6007532397ms;
+}
+.background .g :nth-child(60) {
+  animation-delay: -15284.9340865731ms;
+}
+.background .b :nth-child(60) {
+  animation-delay: -15178.2674199064ms;
+}
+.background .r :nth-child(61) {
+  animation-delay: -15421.400845762ms;
+}
+.background .g :nth-child(61) {
+  animation-delay: -15314.7341790953ms;
+}
+.background .b :nth-child(61) {
+  animation-delay: -15208.0675124287ms;
+}
+.background .r :nth-child(62) {
+  animation-delay: -15462.1358496751ms;
+}
+.background .g :nth-child(62) {
+  animation-delay: -15355.4691830084ms;
+}
+.background .b :nth-child(62) {
+  animation-delay: -15248.8025163418ms;
+}
+.background .r :nth-child(63) {
+  animation-delay: -15501.1293308102ms;
+}
+.background .g :nth-child(63) {
+  animation-delay: -15394.4626641435ms;
+}
+.background .b :nth-child(63) {
+  animation-delay: -15287.7959974769ms;
+}
+.background .r :nth-child(64) {
+  animation-delay: -15537.9401744315ms;
+}
+.background .g :nth-child(64) {
+  animation-delay: -15431.2735077649ms;
+}
+.background .b :nth-child(64) {
+  animation-delay: -15324.6068410982ms;
+}
+.background .r :nth-child(65) {
+  animation-delay: -15572.0048391813ms;
+}
+.background .g :nth-child(65) {
+  animation-delay: -15465.3381725146ms;
+}
+.background .b :nth-child(65) {
+  animation-delay: -15358.671505848ms;
+}
+.background .r :nth-child(66) {
+  animation-delay: -15602.6164693682ms;
+}
+.background .g :nth-child(66) {
+  animation-delay: -15495.9498027015ms;
+}
+.background .b :nth-child(66) {
+  animation-delay: -15389.2831360348ms;
+}
+.background .r :nth-child(67) {
+  animation-delay: -15628.9195227393ms;
+}
+.background .g :nth-child(67) {
+  animation-delay: -15522.2528560727ms;
+}
+.background .b :nth-child(67) {
+  animation-delay: -15415.586189406ms;
+}
+.background .r :nth-child(68) {
+  animation-delay: -15649.9414216964ms;
+}
+.background .g :nth-child(68) {
+  animation-delay: -15543.2747550298ms;
+}
+.background .b :nth-child(68) {
+  animation-delay: -15436.6080883631ms;
+}
+.background .r :nth-child(69) {
+  animation-delay: -15664.6874095158ms;
+}
+.background .g :nth-child(69) {
+  animation-delay: -15558.0207428492ms;
+}
+.background .b :nth-child(69) {
+  animation-delay: -15451.3540761825ms;
+}
+.background .r :nth-child(70) {
+  animation-delay: -15672.3091458648ms;
+}
+.background .g :nth-child(70) {
+  animation-delay: -15565.6424791981ms;
+}
+.background .b :nth-child(70) {
+  animation-delay: -15458.9758125315ms;
+}
+.background .r :nth-child(71) {
+  animation-delay: -15672.3091458648ms;
+}
+.background .g :nth-child(71) {
+  animation-delay: -15565.6424791981ms;
+}
+.background .b :nth-child(71) {
+  animation-delay: -15458.9758125315ms;
+}
+.background .r :nth-child(72) {
+  animation-delay: -15664.6874095158ms;
+}
+.background .g :nth-child(72) {
+  animation-delay: -15558.0207428492ms;
+}
+.background .b :nth-child(72) {
+  animation-delay: -15451.3540761825ms;
+}
+.background .r :nth-child(73) {
+  animation-delay: -15649.9414216964ms;
+}
+.background .g :nth-child(73) {
+  animation-delay: -15543.2747550298ms;
+}
+.background .b :nth-child(73) {
+  animation-delay: -15436.6080883631ms;
+}
+.background .r :nth-child(74) {
+  animation-delay: -15628.9195227393ms;
+}
+.background .g :nth-child(74) {
+  animation-delay: -15522.2528560727ms;
+}
+.background .b :nth-child(74) {
+  animation-delay: -15415.586189406ms;
+}
+.background .r :nth-child(75) {
+  animation-delay: -15602.6164693682ms;
+}
+.background .g :nth-child(75) {
+  animation-delay: -15495.9498027015ms;
+}
+.background .b :nth-child(75) {
+  animation-delay: -15389.2831360348ms;
+}
+.background .r :nth-child(76) {
+  animation-delay: -15572.0048391813ms;
+}
+.background .g :nth-child(76) {
+  animation-delay: -15465.3381725146ms;
+}
+.background .b :nth-child(76) {
+  animation-delay: -15358.671505848ms;
+}
+.background .r :nth-child(77) {
+  animation-delay: -15537.9401744315ms;
+}
+.background .g :nth-child(77) {
+  animation-delay: -15431.2735077649ms;
+}
+.background .b :nth-child(77) {
+  animation-delay: -15324.6068410982ms;
+}
+.background .r :nth-child(78) {
+  animation-delay: -15501.1293308102ms;
+}
+.background .g :nth-child(78) {
+  animation-delay: -15394.4626641435ms;
+}
+.background .b :nth-child(78) {
+  animation-delay: -15287.7959974769ms;
+}
+.background .r :nth-child(79) {
+  animation-delay: -15462.1358496751ms;
+}
+.background .g :nth-child(79) {
+  animation-delay: -15355.4691830084ms;
+}
+.background .b :nth-child(79) {
+  animation-delay: -15248.8025163418ms;
+}
+.background .r :nth-child(80) {
+  animation-delay: -15421.400845762ms;
+}
+.background .g :nth-child(80) {
+  animation-delay: -15314.7341790953ms;
+}
+.background .b :nth-child(80) {
+  animation-delay: -15208.0675124287ms;
+}
+.background .r :nth-child(81) {
+  animation-delay: -15448.223272904ms;
+}
+.background .g :nth-child(81) {
+  animation-delay: -15341.5566062373ms;
+}
+.background .b :nth-child(81) {
+  animation-delay: -15234.8899395706ms;
+}
+.background .r :nth-child(82) {
+  animation-delay: -15491.1007766909ms;
+}
+.background .g :nth-child(82) {
+  animation-delay: -15384.4341100243ms;
+}
+.background .b :nth-child(82) {
+  animation-delay: -15277.7674433576ms;
+}
+.background .r :nth-child(83) {
+  animation-delay: -15532.503989474ms;
+}
+.background .g :nth-child(83) {
+  animation-delay: -15425.8373228073ms;
+}
+.background .b :nth-child(83) {
+  animation-delay: -15319.1706561407ms;
+}
+.background .r :nth-child(84) {
+  animation-delay: -15572.0048391813ms;
+}
+.background .g :nth-child(84) {
+  animation-delay: -15465.3381725146ms;
+}
+.background .b :nth-child(84) {
+  animation-delay: -15358.671505848ms;
+}
+.background .r :nth-child(85) {
+  animation-delay: -15609.0263014421ms;
+}
+.background .g :nth-child(85) {
+  animation-delay: -15502.3596347754ms;
+}
+.background .b :nth-child(85) {
+  animation-delay: -15395.6929681087ms;
+}
+.background .r :nth-child(86) {
+  animation-delay: -15642.7966325785ms;
+}
+.background .g :nth-child(86) {
+  animation-delay: -15536.1299659118ms;
+}
+.background .b :nth-child(86) {
+  animation-delay: -15429.4632992451ms;
+}
+.background .r :nth-child(87) {
+  animation-delay: -15672.3091458648ms;
+}
+.background .g :nth-child(87) {
+  animation-delay: -15565.6424791981ms;
+}
+.background .b :nth-child(87) {
+  animation-delay: -15458.9758125315ms;
+}
+.background .r :nth-child(88) {
+  animation-delay: -15696.3199322909ms;
+}
+.background .g :nth-child(88) {
+  animation-delay: -15589.6532656243ms;
+}
+.background .b :nth-child(88) {
+  animation-delay: -15482.9865989576ms;
+}
+.background .r :nth-child(89) {
+  animation-delay: -15713.4426608564ms;
+}
+.background .g :nth-child(89) {
+  animation-delay: -15606.7759941897ms;
+}
+.background .b :nth-child(89) {
+  animation-delay: -15500.1093275231ms;
+}
+.background .r :nth-child(90) {
+  animation-delay: -15722.3997997773ms;
+}
+.background .g :nth-child(90) {
+  animation-delay: -15615.7331331106ms;
+}
+.background .b :nth-child(90) {
+  animation-delay: -15509.0664664439ms;
+}
+.background .r :nth-child(91) {
+  animation-delay: -15722.3997997773ms;
+}
+.background .g :nth-child(91) {
+  animation-delay: -15615.7331331106ms;
+}
+.background .b :nth-child(91) {
+  animation-delay: -15509.0664664439ms;
+}
+.background .r :nth-child(92) {
+  animation-delay: -15713.4426608564ms;
+}
+.background .g :nth-child(92) {
+  animation-delay: -15606.7759941897ms;
+}
+.background .b :nth-child(92) {
+  animation-delay: -15500.1093275231ms;
+}
+.background .r :nth-child(93) {
+  animation-delay: -15696.3199322909ms;
+}
+.background .g :nth-child(93) {
+  animation-delay: -15589.6532656243ms;
+}
+.background .b :nth-child(93) {
+  animation-delay: -15482.9865989576ms;
+}
+.background .r :nth-child(94) {
+  animation-delay: -15672.3091458648ms;
+}
+.background .g :nth-child(94) {
+  animation-delay: -15565.6424791981ms;
+}
+.background .b :nth-child(94) {
+  animation-delay: -15458.9758125315ms;
+}
+.background .r :nth-child(95) {
+  animation-delay: -15642.7966325785ms;
+}
+.background .g :nth-child(95) {
+  animation-delay: -15536.1299659118ms;
+}
+.background .b :nth-child(95) {
+  animation-delay: -15429.4632992451ms;
+}
+.background .r :nth-child(96) {
+  animation-delay: -15609.0263014421ms;
+}
+.background .g :nth-child(96) {
+  animation-delay: -15502.3596347754ms;
+}
+.background .b :nth-child(96) {
+  animation-delay: -15395.6929681087ms;
+}
+.background .r :nth-child(97) {
+  animation-delay: -15572.0048391813ms;
+}
+.background .g :nth-child(97) {
+  animation-delay: -15465.3381725146ms;
+}
+.background .b :nth-child(97) {
+  animation-delay: -15358.671505848ms;
+}
+.background .r :nth-child(98) {
+  animation-delay: -15532.503989474ms;
+}
+.background .g :nth-child(98) {
+  animation-delay: -15425.8373228073ms;
+}
+.background .b :nth-child(98) {
+  animation-delay: -15319.1706561407ms;
+}
+.background .r :nth-child(99) {
+  animation-delay: -15491.1007766909ms;
+}
+.background .g :nth-child(99) {
+  animation-delay: -15384.4341100243ms;
+}
+.background .b :nth-child(99) {
+  animation-delay: -15277.7674433576ms;
+}
+.background .r :nth-child(100) {
+  animation-delay: -15448.223272904ms;
+}
+.background .g :nth-child(100) {
+  animation-delay: -15341.5566062373ms;
+}
+.background .b :nth-child(100) {
+  animation-delay: -15234.8899395706ms;
+}
+.background .r :nth-child(101) {
+  animation-delay: -15471.6143744404ms;
+}
+.background .g :nth-child(101) {
+  animation-delay: -15364.9477077737ms;
+}
+.background .b :nth-child(101) {
+  animation-delay: -15258.2810411071ms;
+}
+.background .r :nth-child(102) {
+  animation-delay: -15516.562069943ms;
+}
+.background .g :nth-child(102) {
+  animation-delay: -15409.8954032763ms;
+}
+.background .b :nth-child(102) {
+  animation-delay: -15303.2287366097ms;
+}
+.background .r :nth-child(103) {
+  animation-delay: -15560.3565847292ms;
+}
+.background .g :nth-child(103) {
+  animation-delay: -15453.6899180626ms;
+}
+.background .b :nth-child(103) {
+  animation-delay: -15347.0232513959ms;
+}
+.background .r :nth-child(104) {
+  animation-delay: -15602.6164693682ms;
+}
+.background .g :nth-child(104) {
+  animation-delay: -15495.9498027015ms;
+}
+.background .b :nth-child(104) {
+  animation-delay: -15389.2831360348ms;
+}
+.background .r :nth-child(105) {
+  animation-delay: -15642.7966325785ms;
+}
+.background .g :nth-child(105) {
+  animation-delay: -15536.1299659118ms;
+}
+.background .b :nth-child(105) {
+  animation-delay: -15429.4632992451ms;
+}
+.background .r :nth-child(106) {
+  animation-delay: -15680.1124284526ms;
+}
+.background .g :nth-child(106) {
+  animation-delay: -15573.4457617859ms;
+}
+.background .b :nth-child(106) {
+  animation-delay: -15466.7790951193ms;
+}
+.background .r :nth-child(107) {
+  animation-delay: -15713.4426608564ms;
+}
+.background .g :nth-child(107) {
+  animation-delay: -15606.7759941897ms;
+}
+.background .b :nth-child(107) {
+  animation-delay: -15500.1093275231ms;
+}
+.background .r :nth-child(108) {
+  animation-delay: -15741.24259188ms;
+}
+.background .g :nth-child(108) {
+  animation-delay: -15634.5759252133ms;
+}
+.background .b :nth-child(108) {
+  animation-delay: -15527.9092585467ms;
+}
+.background .r :nth-child(109) {
+  animation-delay: -15761.5698816209ms;
+}
+.background .g :nth-child(109) {
+  animation-delay: -15654.9032149542ms;
+}
+.background .b :nth-child(109) {
+  animation-delay: -15548.2365482876ms;
+}
+.background .r :nth-child(110) {
+  animation-delay: -15772.4133485968ms;
+}
+.background .g :nth-child(110) {
+  animation-delay: -15665.7466819301ms;
+}
+.background .b :nth-child(110) {
+  animation-delay: -15559.0800152635ms;
+}
+.background .r :nth-child(111) {
+  animation-delay: -15772.4133485968ms;
+}
+.background .g :nth-child(111) {
+  animation-delay: -15665.7466819301ms;
+}
+.background .b :nth-child(111) {
+  animation-delay: -15559.0800152635ms;
+}
+.background .r :nth-child(112) {
+  animation-delay: -15761.5698816209ms;
+}
+.background .g :nth-child(112) {
+  animation-delay: -15654.9032149542ms;
+}
+.background .b :nth-child(112) {
+  animation-delay: -15548.2365482876ms;
+}
+.background .r :nth-child(113) {
+  animation-delay: -15741.24259188ms;
+}
+.background .g :nth-child(113) {
+  animation-delay: -15634.5759252133ms;
+}
+.background .b :nth-child(113) {
+  animation-delay: -15527.9092585467ms;
+}
+.background .r :nth-child(114) {
+  animation-delay: -15713.4426608564ms;
+}
+.background .g :nth-child(114) {
+  animation-delay: -15606.7759941897ms;
+}
+.background .b :nth-child(114) {
+  animation-delay: -15500.1093275231ms;
+}
+.background .r :nth-child(115) {
+  animation-delay: -15680.1124284526ms;
+}
+.background .g :nth-child(115) {
+  animation-delay: -15573.4457617859ms;
+}
+.background .b :nth-child(115) {
+  animation-delay: -15466.7790951193ms;
+}
+.background .r :nth-child(116) {
+  animation-delay: -15642.7966325785ms;
+}
+.background .g :nth-child(116) {
+  animation-delay: -15536.1299659118ms;
+}
+.background .b :nth-child(116) {
+  animation-delay: -15429.4632992451ms;
+}
+.background .r :nth-child(117) {
+  animation-delay: -15602.6164693682ms;
+}
+.background .g :nth-child(117) {
+  animation-delay: -15495.9498027015ms;
+}
+.background .b :nth-child(117) {
+  animation-delay: -15389.2831360348ms;
+}
+.background .r :nth-child(118) {
+  animation-delay: -15560.3565847292ms;
+}
+.background .g :nth-child(118) {
+  animation-delay: -15453.6899180626ms;
+}
+.background .b :nth-child(118) {
+  animation-delay: -15347.0232513959ms;
+}
+.background .r :nth-child(119) {
+  animation-delay: -15516.562069943ms;
+}
+.background .g :nth-child(119) {
+  animation-delay: -15409.8954032763ms;
+}
+.background .b :nth-child(119) {
+  animation-delay: -15303.2287366097ms;
+}
+.background .r :nth-child(120) {
+  animation-delay: -15471.6143744404ms;
+}
+.background .g :nth-child(120) {
+  animation-delay: -15364.9477077737ms;
+}
+.background .b :nth-child(120) {
+  animation-delay: -15258.2810411071ms;
+}
+.background .r :nth-child(121) {
+  animation-delay: -15491.1007766909ms;
+}
+.background .g :nth-child(121) {
+  animation-delay: -15384.4341100243ms;
+}
+.background .b :nth-child(121) {
+  animation-delay: -15277.7674433576ms;
+}
+.background .r :nth-child(122) {
+  animation-delay: -15537.9401744315ms;
+}
+.background .g :nth-child(122) {
+  animation-delay: -15431.2735077649ms;
+}
+.background .b :nth-child(122) {
+  animation-delay: -15324.6068410982ms;
+}
+.background .r :nth-child(123) {
+  animation-delay: -15583.9791077632ms;
+}
+.background .g :nth-child(123) {
+  animation-delay: -15477.3124410965ms;
+}
+.background .b :nth-child(123) {
+  animation-delay: -15370.6457744299ms;
+}
+.background .r :nth-child(124) {
+  animation-delay: -15628.9195227393ms;
+}
+.background .g :nth-child(124) {
+  animation-delay: -15522.2528560727ms;
+}
+.background .b :nth-child(124) {
+  animation-delay: -15415.586189406ms;
+}
+.background .r :nth-child(125) {
+  animation-delay: -15672.3091458648ms;
+}
+.background .g :nth-child(125) {
+  animation-delay: -15565.6424791981ms;
+}
+.background .b :nth-child(125) {
+  animation-delay: -15458.9758125315ms;
+}
+.background .r :nth-child(126) {
+  animation-delay: -15713.4426608564ms;
+}
+.background .g :nth-child(126) {
+  animation-delay: -15606.7759941897ms;
+}
+.background .b :nth-child(126) {
+  animation-delay: -15500.1093275231ms;
+}
+.background .r :nth-child(127) {
+  animation-delay: -15751.1985554631ms;
+}
+.background .g :nth-child(127) {
+  animation-delay: -15644.5318887965ms;
+}
+.background .b :nth-child(127) {
+  animation-delay: -15537.8652221298ms;
+}
+.background .r :nth-child(128) {
+  animation-delay: -15783.7999850982ms;
+}
+.background .g :nth-child(128) {
+  animation-delay: -15677.1333184315ms;
+}
+.background .b :nth-child(128) {
+  animation-delay: -15570.4666517648ms;
+}
+.background .r :nth-child(129) {
+  animation-delay: -15808.5947452737ms;
+}
+.background .g :nth-child(129) {
+  animation-delay: -15701.928078607ms;
+}
+.background .b :nth-child(129) {
+  animation-delay: -15595.2614119404ms;
+}
+.background .r :nth-child(130) {
+  animation-delay: -15822.2846824737ms;
+}
+.background .g :nth-child(130) {
+  animation-delay: -15715.618015807ms;
+}
+.background .b :nth-child(130) {
+  animation-delay: -15608.9513491403ms;
+}
+.background .r :nth-child(131) {
+  animation-delay: -15822.2846824737ms;
+}
+.background .g :nth-child(131) {
+  animation-delay: -15715.618015807ms;
+}
+.background .b :nth-child(131) {
+  animation-delay: -15608.9513491403ms;
+}
+.background .r :nth-child(132) {
+  animation-delay: -15808.5947452737ms;
+}
+.background .g :nth-child(132) {
+  animation-delay: -15701.928078607ms;
+}
+.background .b :nth-child(132) {
+  animation-delay: -15595.2614119404ms;
+}
+.background .r :nth-child(133) {
+  animation-delay: -15783.7999850982ms;
+}
+.background .g :nth-child(133) {
+  animation-delay: -15677.1333184315ms;
+}
+.background .b :nth-child(133) {
+  animation-delay: -15570.4666517648ms;
+}
+.background .r :nth-child(134) {
+  animation-delay: -15751.1985554631ms;
+}
+.background .g :nth-child(134) {
+  animation-delay: -15644.5318887965ms;
+}
+.background .b :nth-child(134) {
+  animation-delay: -15537.8652221298ms;
+}
+.background .r :nth-child(135) {
+  animation-delay: -15713.4426608564ms;
+}
+.background .g :nth-child(135) {
+  animation-delay: -15606.7759941897ms;
+}
+.background .b :nth-child(135) {
+  animation-delay: -15500.1093275231ms;
+}
+.background .r :nth-child(136) {
+  animation-delay: -15672.3091458648ms;
+}
+.background .g :nth-child(136) {
+  animation-delay: -15565.6424791981ms;
+}
+.background .b :nth-child(136) {
+  animation-delay: -15458.9758125315ms;
+}
+.background .r :nth-child(137) {
+  animation-delay: -15628.9195227393ms;
+}
+.background .g :nth-child(137) {
+  animation-delay: -15522.2528560727ms;
+}
+.background .b :nth-child(137) {
+  animation-delay: -15415.586189406ms;
+}
+.background .r :nth-child(138) {
+  animation-delay: -15583.9791077632ms;
+}
+.background .g :nth-child(138) {
+  animation-delay: -15477.3124410965ms;
+}
+.background .b :nth-child(138) {
+  animation-delay: -15370.6457744299ms;
+}
+.background .r :nth-child(139) {
+  animation-delay: -15537.9401744315ms;
+}
+.background .g :nth-child(139) {
+  animation-delay: -15431.2735077649ms;
+}
+.background .b :nth-child(139) {
+  animation-delay: -15324.6068410982ms;
+}
+.background .r :nth-child(140) {
+  animation-delay: -15491.1007766909ms;
+}
+.background .g :nth-child(140) {
+  animation-delay: -15384.4341100243ms;
+}
+.background .b :nth-child(140) {
+  animation-delay: -15277.7674433576ms;
+}
+.background .r :nth-child(141) {
+  animation-delay: -15506.2199810396ms;
+}
+.background .g :nth-child(141) {
+  animation-delay: -15399.553314373ms;
+}
+.background .b :nth-child(141) {
+  animation-delay: -15292.8866477063ms;
+}
+.background .r :nth-child(142) {
+  animation-delay: -15554.6466907676ms;
+}
+.background .g :nth-child(142) {
+  animation-delay: -15447.9800241009ms;
+}
+.background .b :nth-child(142) {
+  animation-delay: -15341.3133574342ms;
+}
+.background .r :nth-child(143) {
+  animation-delay: -15602.6164693682ms;
+}
+.background .g :nth-child(143) {
+  animation-delay: -15495.9498027015ms;
+}
+.background .b :nth-child(143) {
+  animation-delay: -15389.2831360348ms;
+}
+.background .r :nth-child(144) {
+  animation-delay: -15649.9414216964ms;
+}
+.background .g :nth-child(144) {
+  animation-delay: -15543.2747550298ms;
+}
+.background .b :nth-child(144) {
+  animation-delay: -15436.6080883631ms;
+}
+.background .r :nth-child(145) {
+  animation-delay: -15696.3199322909ms;
+}
+.background .g :nth-child(145) {
+  animation-delay: -15589.6532656243ms;
+}
+.background .b :nth-child(145) {
+  animation-delay: -15482.9865989576ms;
+}
+.background .r :nth-child(146) {
+  animation-delay: -15741.24259188ms;
+}
+.background .g :nth-child(146) {
+  animation-delay: -15634.5759252133ms;
+}
+.background .b :nth-child(146) {
+  animation-delay: -15527.9092585467ms;
+}
+.background .r :nth-child(147) {
+  animation-delay: -15783.7999850982ms;
+}
+.background .g :nth-child(147) {
+  animation-delay: -15677.1333184315ms;
+}
+.background .b :nth-child(147) {
+  animation-delay: -15570.4666517648ms;
+}
+.background .r :nth-child(148) {
+  animation-delay: -15822.2846824737ms;
+}
+.background .g :nth-child(148) {
+  animation-delay: -15715.618015807ms;
+}
+.background .b :nth-child(148) {
+  animation-delay: -15608.9513491403ms;
+}
+.background .r :nth-child(149) {
+  animation-delay: -15853.4521949097ms;
+}
+.background .g :nth-child(149) {
+  animation-delay: -15746.7855282431ms;
+}
+.background .b :nth-child(149) {
+  animation-delay: -15640.1188615764ms;
+}
+.background .r :nth-child(150) {
+  animation-delay: -15871.8476620447ms;
+}
+.background .g :nth-child(150) {
+  animation-delay: -15765.180995378ms;
+}
+.background .b :nth-child(150) {
+  animation-delay: -15658.5143287114ms;
+}
+.background .r :nth-child(151) {
+  animation-delay: -15871.8476620447ms;
+}
+.background .g :nth-child(151) {
+  animation-delay: -15765.180995378ms;
+}
+.background .b :nth-child(151) {
+  animation-delay: -15658.5143287114ms;
+}
+.background .r :nth-child(152) {
+  animation-delay: -15853.4521949097ms;
+}
+.background .g :nth-child(152) {
+  animation-delay: -15746.7855282431ms;
+}
+.background .b :nth-child(152) {
+  animation-delay: -15640.1188615764ms;
+}
+.background .r :nth-child(153) {
+  animation-delay: -15822.2846824737ms;
+}
+.background .g :nth-child(153) {
+  animation-delay: -15715.618015807ms;
+}
+.background .b :nth-child(153) {
+  animation-delay: -15608.9513491403ms;
+}
+.background .r :nth-child(154) {
+  animation-delay: -15783.7999850982ms;
+}
+.background .g :nth-child(154) {
+  animation-delay: -15677.1333184315ms;
+}
+.background .b :nth-child(154) {
+  animation-delay: -15570.4666517648ms;
+}
+.background .r :nth-child(155) {
+  animation-delay: -15741.24259188ms;
+}
+.background .g :nth-child(155) {
+  animation-delay: -15634.5759252133ms;
+}
+.background .b :nth-child(155) {
+  animation-delay: -15527.9092585467ms;
+}
+.background .r :nth-child(156) {
+  animation-delay: -15696.3199322909ms;
+}
+.background .g :nth-child(156) {
+  animation-delay: -15589.6532656243ms;
+}
+.background .b :nth-child(156) {
+  animation-delay: -15482.9865989576ms;
+}
+.background .r :nth-child(157) {
+  animation-delay: -15649.9414216964ms;
+}
+.background .g :nth-child(157) {
+  animation-delay: -15543.2747550298ms;
+}
+.background .b :nth-child(157) {
+  animation-delay: -15436.6080883631ms;
+}
+.background .r :nth-child(158) {
+  animation-delay: -15602.6164693682ms;
+}
+.background .g :nth-child(158) {
+  animation-delay: -15495.9498027015ms;
+}
+.background .b :nth-child(158) {
+  animation-delay: -15389.2831360348ms;
+}
+.background .r :nth-child(159) {
+  animation-delay: -15554.6466907676ms;
+}
+.background .g :nth-child(159) {
+  animation-delay: -15447.9800241009ms;
+}
+.background .b :nth-child(159) {
+  animation-delay: -15341.3133574342ms;
+}
+.background .r :nth-child(160) {
+  animation-delay: -15506.2199810396ms;
+}
+.background .g :nth-child(160) {
+  animation-delay: -15399.553314373ms;
+}
+.background .b :nth-child(160) {
+  animation-delay: -15292.8866477063ms;
+}
+.background .r :nth-child(161) {
+  animation-delay: -15516.562069943ms;
+}
+.background .g :nth-child(161) {
+  animation-delay: -15409.8954032763ms;
+}
+.background .b :nth-child(161) {
+  animation-delay: -15303.2287366097ms;
+}
+.background .r :nth-child(162) {
+  animation-delay: -15566.1416185694ms;
+}
+.background .g :nth-child(162) {
+  animation-delay: -15459.4749519027ms;
+}
+.background .b :nth-child(162) {
+  animation-delay: -15352.8082852361ms;
+}
+.background .r :nth-child(163) {
+  animation-delay: -15615.5429861341ms;
+}
+.background .g :nth-child(163) {
+  animation-delay: -15508.8763194674ms;
+}
+.background .b :nth-child(163) {
+  animation-delay: -15402.2096528007ms;
+}
+.background .r :nth-child(164) {
+  animation-delay: -15664.6874095158ms;
+}
+.background .g :nth-child(164) {
+  animation-delay: -15558.0207428492ms;
+}
+.background .b :nth-child(164) {
+  animation-delay: -15451.3540761825ms;
+}
+.background .r :nth-child(165) {
+  animation-delay: -15713.4426608564ms;
+}
+.background .g :nth-child(165) {
+  animation-delay: -15606.7759941897ms;
+}
+.background .b :nth-child(165) {
+  animation-delay: -15500.1093275231ms;
+}
+.background .r :nth-child(166) {
+  animation-delay: -15761.5698816209ms;
+}
+.background .g :nth-child(166) {
+  animation-delay: -15654.9032149542ms;
+}
+.background .b :nth-child(166) {
+  animation-delay: -15548.2365482876ms;
+}
+.background .r :nth-child(167) {
+  animation-delay: -15808.5947452737ms;
+}
+.background .g :nth-child(167) {
+  animation-delay: -15701.928078607ms;
+}
+.background .b :nth-child(167) {
+  animation-delay: -15595.2614119404ms;
+}
+.background .r :nth-child(168) {
+  animation-delay: -15853.4521949097ms;
+}
+.background .g :nth-child(168) {
+  animation-delay: -15746.7855282431ms;
+}
+.background .b :nth-child(168) {
+  animation-delay: -15640.1188615764ms;
+}
+.background .r :nth-child(169) {
+  animation-delay: -15893.3708094842ms;
+}
+.background .g :nth-child(169) {
+  animation-delay: -15786.7041428175ms;
+}
+.background .b :nth-child(169) {
+  animation-delay: -15680.0374761509ms;
+}
+.background .r :nth-child(170) {
+  animation-delay: -15920.5232938736ms;
+}
+.background .g :nth-child(170) {
+  animation-delay: -15813.856627207ms;
+}
+.background .b :nth-child(170) {
+  animation-delay: -15707.1899605403ms;
+}
+.background .r :nth-child(171) {
+  animation-delay: -15920.5232938736ms;
+}
+.background .g :nth-child(171) {
+  animation-delay: -15813.856627207ms;
+}
+.background .b :nth-child(171) {
+  animation-delay: -15707.1899605403ms;
+}
+.background .r :nth-child(172) {
+  animation-delay: -15893.3708094842ms;
+}
+.background .g :nth-child(172) {
+  animation-delay: -15786.7041428175ms;
+}
+.background .b :nth-child(172) {
+  animation-delay: -15680.0374761509ms;
+}
+.background .r :nth-child(173) {
+  animation-delay: -15853.4521949097ms;
+}
+.background .g :nth-child(173) {
+  animation-delay: -15746.7855282431ms;
+}
+.background .b :nth-child(173) {
+  animation-delay: -15640.1188615764ms;
+}
+.background .r :nth-child(174) {
+  animation-delay: -15808.5947452737ms;
+}
+.background .g :nth-child(174) {
+  animation-delay: -15701.928078607ms;
+}
+.background .b :nth-child(174) {
+  animation-delay: -15595.2614119404ms;
+}
+.background .r :nth-child(175) {
+  animation-delay: -15761.5698816209ms;
+}
+.background .g :nth-child(175) {
+  animation-delay: -15654.9032149542ms;
+}
+.background .b :nth-child(175) {
+  animation-delay: -15548.2365482876ms;
+}
+.background .r :nth-child(176) {
+  animation-delay: -15713.4426608564ms;
+}
+.background .g :nth-child(176) {
+  animation-delay: -15606.7759941897ms;
+}
+.background .b :nth-child(176) {
+  animation-delay: -15500.1093275231ms;
+}
+.background .r :nth-child(177) {
+  animation-delay: -15664.6874095158ms;
+}
+.background .g :nth-child(177) {
+  animation-delay: -15558.0207428492ms;
+}
+.background .b :nth-child(177) {
+  animation-delay: -15451.3540761825ms;
+}
+.background .r :nth-child(178) {
+  animation-delay: -15615.5429861341ms;
+}
+.background .g :nth-child(178) {
+  animation-delay: -15508.8763194674ms;
+}
+.background .b :nth-child(178) {
+  animation-delay: -15402.2096528007ms;
+}
+.background .r :nth-child(179) {
+  animation-delay: -15566.1416185694ms;
+}
+.background .g :nth-child(179) {
+  animation-delay: -15459.4749519027ms;
+}
+.background .b :nth-child(179) {
+  animation-delay: -15352.8082852361ms;
+}
+.background .r :nth-child(180) {
+  animation-delay: -15516.562069943ms;
+}
+.background .g :nth-child(180) {
+  animation-delay: -15409.8954032763ms;
+}
+.background .b :nth-child(180) {
+  animation-delay: -15303.2287366097ms;
+}
+.background .r :nth-child(181) {
+  animation-delay: -15521.8169861189ms;
+}
+.background .g :nth-child(181) {
+  animation-delay: -15415.1503194522ms;
+}
+.background .b :nth-child(181) {
+  animation-delay: -15308.4836527855ms;
+}
+.background .r :nth-child(182) {
+  animation-delay: -15572.0048391813ms;
+}
+.background .g :nth-child(182) {
+  animation-delay: -15465.3381725146ms;
+}
+.background .b :nth-child(182) {
+  animation-delay: -15358.671505848ms;
+}
+.background .r :nth-child(183) {
+  animation-delay: -15622.1720523077ms;
+}
+.background .g :nth-child(183) {
+  animation-delay: -15515.5053856411ms;
+}
+.background .b :nth-child(183) {
+  animation-delay: -15408.8387189744ms;
+}
+.background .r :nth-child(184) {
+  animation-delay: -15672.3091458648ms;
+}
+.background .g :nth-child(184) {
+  animation-delay: -15565.6424791981ms;
+}
+.background .b :nth-child(184) {
+  animation-delay: -15458.9758125315ms;
+}
+.background .r :nth-child(185) {
+  animation-delay: -15722.3997997773ms;
+}
+.background .g :nth-child(185) {
+  animation-delay: -15615.7331331106ms;
+}
+.background .b :nth-child(185) {
+  animation-delay: -15509.0664664439ms;
+}
+.background .r :nth-child(186) {
+  animation-delay: -15772.4133485968ms;
+}
+.background .g :nth-child(186) {
+  animation-delay: -15665.7466819301ms;
+}
+.background .b :nth-child(186) {
+  animation-delay: -15559.0800152635ms;
+}
+.background .r :nth-child(187) {
+  animation-delay: -15822.2846824737ms;
+}
+.background .g :nth-child(187) {
+  animation-delay: -15715.618015807ms;
+}
+.background .b :nth-child(187) {
+  animation-delay: -15608.9513491403ms;
+}
+.background .r :nth-child(188) {
+  animation-delay: -15871.8476620447ms;
+}
+.background .g :nth-child(188) {
+  animation-delay: -15765.180995378ms;
+}
+.background .b :nth-child(188) {
+  animation-delay: -15658.5143287114ms;
+}
+.background .r :nth-child(189) {
+  animation-delay: -15920.5232938736ms;
+}
+.background .g :nth-child(189) {
+  animation-delay: -15813.856627207ms;
+}
+.background .b :nth-child(189) {
+  animation-delay: -15707.1899605403ms;
+}
+.background .r :nth-child(190) {
+  animation-delay: -15964.4569364947ms;
+}
+.background .g :nth-child(190) {
+  animation-delay: -15857.7902698281ms;
+}
+.background .b :nth-child(190) {
+  animation-delay: -15751.1236031614ms;
+}
+.background .r :nth-child(191) {
+  animation-delay: -15964.4569364947ms;
+}
+.background .g :nth-child(191) {
+  animation-delay: -15857.7902698281ms;
+}
+.background .b :nth-child(191) {
+  animation-delay: -15751.1236031614ms;
+}
+.background .r :nth-child(192) {
+  animation-delay: -15920.5232938736ms;
+}
+.background .g :nth-child(192) {
+  animation-delay: -15813.856627207ms;
+}
+.background .b :nth-child(192) {
+  animation-delay: -15707.1899605403ms;
+}
+.background .r :nth-child(193) {
+  animation-delay: -15871.8476620447ms;
+}
+.background .g :nth-child(193) {
+  animation-delay: -15765.180995378ms;
+}
+.background .b :nth-child(193) {
+  animation-delay: -15658.5143287114ms;
+}
+.background .r :nth-child(194) {
+  animation-delay: -15822.2846824737ms;
+}
+.background .g :nth-child(194) {
+  animation-delay: -15715.618015807ms;
+}
+.background .b :nth-child(194) {
+  animation-delay: -15608.9513491403ms;
+}
+.background .r :nth-child(195) {
+  animation-delay: -15772.4133485968ms;
+}
+.background .g :nth-child(195) {
+  animation-delay: -15665.7466819301ms;
+}
+.background .b :nth-child(195) {
+  animation-delay: -15559.0800152635ms;
+}
+.background .r :nth-child(196) {
+  animation-delay: -15722.3997997773ms;
+}
+.background .g :nth-child(196) {
+  animation-delay: -15615.7331331106ms;
+}
+.background .b :nth-child(196) {
+  animation-delay: -15509.0664664439ms;
+}
+.background .r :nth-child(197) {
+  animation-delay: -15672.3091458648ms;
+}
+.background .g :nth-child(197) {
+  animation-delay: -15565.6424791981ms;
+}
+.background .b :nth-child(197) {
+  animation-delay: -15458.9758125315ms;
+}
+.background .r :nth-child(198) {
+  animation-delay: -15622.1720523077ms;
+}
+.background .g :nth-child(198) {
+  animation-delay: -15515.5053856411ms;
+}
+.background .b :nth-child(198) {
+  animation-delay: -15408.8387189744ms;
+}
+.background .r :nth-child(199) {
+  animation-delay: -15572.0048391813ms;
+}
+.background .g :nth-child(199) {
+  animation-delay: -15465.3381725146ms;
+}
+.background .b :nth-child(199) {
+  animation-delay: -15358.671505848ms;
+}
+.background .r :nth-child(200) {
+  animation-delay: -15521.8169861189ms;
+}
+.background .g :nth-child(200) {
+  animation-delay: -15415.1503194522ms;
+}
+.background .b :nth-child(200) {
+  animation-delay: -15308.4836527855ms;
+}
+.background .r :nth-child(201) {
+  animation-delay: -15521.8169861189ms;
+}
+.background .g :nth-child(201) {
+  animation-delay: -15415.1503194522ms;
+}
+.background .b :nth-child(201) {
+  animation-delay: -15308.4836527855ms;
+}
+.background .r :nth-child(202) {
+  animation-delay: -15572.0048391813ms;
+}
+.background .g :nth-child(202) {
+  animation-delay: -15465.3381725146ms;
+}
+.background .b :nth-child(202) {
+  animation-delay: -15358.671505848ms;
+}
+.background .r :nth-child(203) {
+  animation-delay: -15622.1720523077ms;
+}
+.background .g :nth-child(203) {
+  animation-delay: -15515.5053856411ms;
+}
+.background .b :nth-child(203) {
+  animation-delay: -15408.8387189744ms;
+}
+.background .r :nth-child(204) {
+  animation-delay: -15672.3091458648ms;
+}
+.background .g :nth-child(204) {
+  animation-delay: -15565.6424791981ms;
+}
+.background .b :nth-child(204) {
+  animation-delay: -15458.9758125315ms;
+}
+.background .r :nth-child(205) {
+  animation-delay: -15722.3997997773ms;
+}
+.background .g :nth-child(205) {
+  animation-delay: -15615.7331331106ms;
+}
+.background .b :nth-child(205) {
+  animation-delay: -15509.0664664439ms;
+}
+.background .r :nth-child(206) {
+  animation-delay: -15772.4133485968ms;
+}
+.background .g :nth-child(206) {
+  animation-delay: -15665.7466819301ms;
+}
+.background .b :nth-child(206) {
+  animation-delay: -15559.0800152635ms;
+}
+.background .r :nth-child(207) {
+  animation-delay: -15822.2846824737ms;
+}
+.background .g :nth-child(207) {
+  animation-delay: -15715.618015807ms;
+}
+.background .b :nth-child(207) {
+  animation-delay: -15608.9513491403ms;
+}
+.background .r :nth-child(208) {
+  animation-delay: -15871.8476620447ms;
+}
+.background .g :nth-child(208) {
+  animation-delay: -15765.180995378ms;
+}
+.background .b :nth-child(208) {
+  animation-delay: -15658.5143287114ms;
+}
+.background .r :nth-child(209) {
+  animation-delay: -15920.5232938736ms;
+}
+.background .g :nth-child(209) {
+  animation-delay: -15813.856627207ms;
+}
+.background .b :nth-child(209) {
+  animation-delay: -15707.1899605403ms;
+}
+.background .r :nth-child(210) {
+  animation-delay: -15964.4569364947ms;
+}
+.background .g :nth-child(210) {
+  animation-delay: -15857.7902698281ms;
+}
+.background .b :nth-child(210) {
+  animation-delay: -15751.1236031614ms;
+}
+.background .r :nth-child(211) {
+  animation-delay: -15964.4569364947ms;
+}
+.background .g :nth-child(211) {
+  animation-delay: -15857.7902698281ms;
+}
+.background .b :nth-child(211) {
+  animation-delay: -15751.1236031614ms;
+}
+.background .r :nth-child(212) {
+  animation-delay: -15920.5232938736ms;
+}
+.background .g :nth-child(212) {
+  animation-delay: -15813.856627207ms;
+}
+.background .b :nth-child(212) {
+  animation-delay: -15707.1899605403ms;
+}
+.background .r :nth-child(213) {
+  animation-delay: -15871.8476620447ms;
+}
+.background .g :nth-child(213) {
+  animation-delay: -15765.180995378ms;
+}
+.background .b :nth-child(213) {
+  animation-delay: -15658.5143287114ms;
+}
+.background .r :nth-child(214) {
+  animation-delay: -15822.2846824737ms;
+}
+.background .g :nth-child(214) {
+  animation-delay: -15715.618015807ms;
+}
+.background .b :nth-child(214) {
+  animation-delay: -15608.9513491403ms;
+}
+.background .r :nth-child(215) {
+  animation-delay: -15772.4133485968ms;
+}
+.background .g :nth-child(215) {
+  animation-delay: -15665.7466819301ms;
+}
+.background .b :nth-child(215) {
+  animation-delay: -15559.0800152635ms;
+}
+.background .r :nth-child(216) {
+  animation-delay: -15722.3997997773ms;
+}
+.background .g :nth-child(216) {
+  animation-delay: -15615.7331331106ms;
+}
+.background .b :nth-child(216) {
+  animation-delay: -15509.0664664439ms;
+}
+.background .r :nth-child(217) {
+  animation-delay: -15672.3091458648ms;
+}
+.background .g :nth-child(217) {
+  animation-delay: -15565.6424791981ms;
+}
+.background .b :nth-child(217) {
+  animation-delay: -15458.9758125315ms;
+}
+.background .r :nth-child(218) {
+  animation-delay: -15622.1720523077ms;
+}
+.background .g :nth-child(218) {
+  animation-delay: -15515.5053856411ms;
+}
+.background .b :nth-child(218) {
+  animation-delay: -15408.8387189744ms;
+}
+.background .r :nth-child(219) {
+  animation-delay: -15572.0048391813ms;
+}
+.background .g :nth-child(219) {
+  animation-delay: -15465.3381725146ms;
+}
+.background .b :nth-child(219) {
+  animation-delay: -15358.671505848ms;
+}
+.background .r :nth-child(220) {
+  animation-delay: -15521.8169861189ms;
+}
+.background .g :nth-child(220) {
+  animation-delay: -15415.1503194522ms;
+}
+.background .b :nth-child(220) {
+  animation-delay: -15308.4836527855ms;
+}
+.background .r :nth-child(221) {
+  animation-delay: -15516.562069943ms;
+}
+.background .g :nth-child(221) {
+  animation-delay: -15409.8954032763ms;
+}
+.background .b :nth-child(221) {
+  animation-delay: -15303.2287366097ms;
+}
+.background .r :nth-child(222) {
+  animation-delay: -15566.1416185694ms;
+}
+.background .g :nth-child(222) {
+  animation-delay: -15459.4749519027ms;
+}
+.background .b :nth-child(222) {
+  animation-delay: -15352.8082852361ms;
+}
+.background .r :nth-child(223) {
+  animation-delay: -15615.5429861341ms;
+}
+.background .g :nth-child(223) {
+  animation-delay: -15508.8763194674ms;
+}
+.background .b :nth-child(223) {
+  animation-delay: -15402.2096528007ms;
+}
+.background .r :nth-child(224) {
+  animation-delay: -15664.6874095158ms;
+}
+.background .g :nth-child(224) {
+  animation-delay: -15558.0207428492ms;
+}
+.background .b :nth-child(224) {
+  animation-delay: -15451.3540761825ms;
+}
+.background .r :nth-child(225) {
+  animation-delay: -15713.4426608564ms;
+}
+.background .g :nth-child(225) {
+  animation-delay: -15606.7759941897ms;
+}
+.background .b :nth-child(225) {
+  animation-delay: -15500.1093275231ms;
+}
+.background .r :nth-child(226) {
+  animation-delay: -15761.5698816209ms;
+}
+.background .g :nth-child(226) {
+  animation-delay: -15654.9032149542ms;
+}
+.background .b :nth-child(226) {
+  animation-delay: -15548.2365482876ms;
+}
+.background .r :nth-child(227) {
+  animation-delay: -15808.5947452737ms;
+}
+.background .g :nth-child(227) {
+  animation-delay: -15701.928078607ms;
+}
+.background .b :nth-child(227) {
+  animation-delay: -15595.2614119404ms;
+}
+.background .r :nth-child(228) {
+  animation-delay: -15853.4521949097ms;
+}
+.background .g :nth-child(228) {
+  animation-delay: -15746.7855282431ms;
+}
+.background .b :nth-child(228) {
+  animation-delay: -15640.1188615764ms;
+}
+.background .r :nth-child(229) {
+  animation-delay: -15893.3708094842ms;
+}
+.background .g :nth-child(229) {
+  animation-delay: -15786.7041428175ms;
+}
+.background .b :nth-child(229) {
+  animation-delay: -15680.0374761509ms;
+}
+.background .r :nth-child(230) {
+  animation-delay: -15920.5232938736ms;
+}
+.background .g :nth-child(230) {
+  animation-delay: -15813.856627207ms;
+}
+.background .b :nth-child(230) {
+  animation-delay: -15707.1899605403ms;
+}
+.background .r :nth-child(231) {
+  animation-delay: -15920.5232938736ms;
+}
+.background .g :nth-child(231) {
+  animation-delay: -15813.856627207ms;
+}
+.background .b :nth-child(231) {
+  animation-delay: -15707.1899605403ms;
+}
+.background .r :nth-child(232) {
+  animation-delay: -15893.3708094842ms;
+}
+.background .g :nth-child(232) {
+  animation-delay: -15786.7041428175ms;
+}
+.background .b :nth-child(232) {
+  animation-delay: -15680.0374761509ms;
+}
+.background .r :nth-child(233) {
+  animation-delay: -15853.4521949097ms;
+}
+.background .g :nth-child(233) {
+  animation-delay: -15746.7855282431ms;
+}
+.background .b :nth-child(233) {
+  animation-delay: -15640.1188615764ms;
+}
+.background .r :nth-child(234) {
+  animation-delay: -15808.5947452737ms;
+}
+.background .g :nth-child(234) {
+  animation-delay: -15701.928078607ms;
+}
+.background .b :nth-child(234) {
+  animation-delay: -15595.2614119404ms;
+}
+.background .r :nth-child(235) {
+  animation-delay: -15761.5698816209ms;
+}
+.background .g :nth-child(235) {
+  animation-delay: -15654.9032149542ms;
+}
+.background .b :nth-child(235) {
+  animation-delay: -15548.2365482876ms;
+}
+.background .r :nth-child(236) {
+  animation-delay: -15713.4426608564ms;
+}
+.background .g :nth-child(236) {
+  animation-delay: -15606.7759941897ms;
+}
+.background .b :nth-child(236) {
+  animation-delay: -15500.1093275231ms;
+}
+.background .r :nth-child(237) {
+  animation-delay: -15664.6874095158ms;
+}
+.background .g :nth-child(237) {
+  animation-delay: -15558.0207428492ms;
+}
+.background .b :nth-child(237) {
+  animation-delay: -15451.3540761825ms;
+}
+.background .r :nth-child(238) {
+  animation-delay: -15615.5429861341ms;
+}
+.background .g :nth-child(238) {
+  animation-delay: -15508.8763194674ms;
+}
+.background .b :nth-child(238) {
+  animation-delay: -15402.2096528007ms;
+}
+.background .r :nth-child(239) {
+  animation-delay: -15566.1416185694ms;
+}
+.background .g :nth-child(239) {
+  animation-delay: -15459.4749519027ms;
+}
+.background .b :nth-child(239) {
+  animation-delay: -15352.8082852361ms;
+}
+.background .r :nth-child(240) {
+  animation-delay: -15516.562069943ms;
+}
+.background .g :nth-child(240) {
+  animation-delay: -15409.8954032763ms;
+}
+.background .b :nth-child(240) {
+  animation-delay: -15303.2287366097ms;
+}
+.background .r :nth-child(241) {
+  animation-delay: -15506.2199810396ms;
+}
+.background .g :nth-child(241) {
+  animation-delay: -15399.553314373ms;
+}
+.background .b :nth-child(241) {
+  animation-delay: -15292.8866477063ms;
+}
+.background .r :nth-child(242) {
+  animation-delay: -15554.6466907676ms;
+}
+.background .g :nth-child(242) {
+  animation-delay: -15447.9800241009ms;
+}
+.background .b :nth-child(242) {
+  animation-delay: -15341.3133574342ms;
+}
+.background .r :nth-child(243) {
+  animation-delay: -15602.6164693682ms;
+}
+.background .g :nth-child(243) {
+  animation-delay: -15495.9498027015ms;
+}
+.background .b :nth-child(243) {
+  animation-delay: -15389.2831360348ms;
+}
+.background .r :nth-child(244) {
+  animation-delay: -15649.9414216964ms;
+}
+.background .g :nth-child(244) {
+  animation-delay: -15543.2747550298ms;
+}
+.background .b :nth-child(244) {
+  animation-delay: -15436.6080883631ms;
+}
+.background .r :nth-child(245) {
+  animation-delay: -15696.3199322909ms;
+}
+.background .g :nth-child(245) {
+  animation-delay: -15589.6532656243ms;
+}
+.background .b :nth-child(245) {
+  animation-delay: -15482.9865989576ms;
+}
+.background .r :nth-child(246) {
+  animation-delay: -15741.24259188ms;
+}
+.background .g :nth-child(246) {
+  animation-delay: -15634.5759252133ms;
+}
+.background .b :nth-child(246) {
+  animation-delay: -15527.9092585467ms;
+}
+.background .r :nth-child(247) {
+  animation-delay: -15783.7999850982ms;
+}
+.background .g :nth-child(247) {
+  animation-delay: -15677.1333184315ms;
+}
+.background .b :nth-child(247) {
+  animation-delay: -15570.4666517648ms;
+}
+.background .r :nth-child(248) {
+  animation-delay: -15822.2846824737ms;
+}
+.background .g :nth-child(248) {
+  animation-delay: -15715.618015807ms;
+}
+.background .b :nth-child(248) {
+  animation-delay: -15608.9513491403ms;
+}
+.background .r :nth-child(249) {
+  animation-delay: -15853.4521949097ms;
+}
+.background .g :nth-child(249) {
+  animation-delay: -15746.7855282431ms;
+}
+.background .b :nth-child(249) {
+  animation-delay: -15640.1188615764ms;
+}
+.background .r :nth-child(250) {
+  animation-delay: -15871.8476620447ms;
+}
+.background .g :nth-child(250) {
+  animation-delay: -15765.180995378ms;
+}
+.background .b :nth-child(250) {
+  animation-delay: -15658.5143287114ms;
+}
+.background .r :nth-child(251) {
+  animation-delay: -15871.8476620447ms;
+}
+.background .g :nth-child(251) {
+  animation-delay: -15765.180995378ms;
+}
+.background .b :nth-child(251) {
+  animation-delay: -15658.5143287114ms;
+}
+.background .r :nth-child(252) {
+  animation-delay: -15853.4521949097ms;
+}
+.background .g :nth-child(252) {
+  animation-delay: -15746.7855282431ms;
+}
+.background .b :nth-child(252) {
+  animation-delay: -15640.1188615764ms;
+}
+.background .r :nth-child(253) {
+  animation-delay: -15822.2846824737ms;
+}
+.background .g :nth-child(253) {
+  animation-delay: -15715.618015807ms;
+}
+.background .b :nth-child(253) {
+  animation-delay: -15608.9513491403ms;
+}
+.background .r :nth-child(254) {
+  animation-delay: -15783.7999850982ms;
+}
+.background .g :nth-child(254) {
+  animation-delay: -15677.1333184315ms;
+}
+.background .b :nth-child(254) {
+  animation-delay: -15570.4666517648ms;
+}
+.background .r :nth-child(255) {
+  animation-delay: -15741.24259188ms;
+}
+.background .g :nth-child(255) {
+  animation-delay: -15634.5759252133ms;
+}
+.background .b :nth-child(255) {
+  animation-delay: -15527.9092585467ms;
+}
+.background .r :nth-child(256) {
+  animation-delay: -15696.3199322909ms;
+}
+.background .g :nth-child(256) {
+  animation-delay: -15589.6532656243ms;
+}
+.background .b :nth-child(256) {
+  animation-delay: -15482.9865989576ms;
+}
+.background .r :nth-child(257) {
+  animation-delay: -15649.9414216964ms;
+}
+.background .g :nth-child(257) {
+  animation-delay: -15543.2747550298ms;
+}
+.background .b :nth-child(257) {
+  animation-delay: -15436.6080883631ms;
+}
+.background .r :nth-child(258) {
+  animation-delay: -15602.6164693682ms;
+}
+.background .g :nth-child(258) {
+  animation-delay: -15495.9498027015ms;
+}
+.background .b :nth-child(258) {
+  animation-delay: -15389.2831360348ms;
+}
+.background .r :nth-child(259) {
+  animation-delay: -15554.6466907676ms;
+}
+.background .g :nth-child(259) {
+  animation-delay: -15447.9800241009ms;
+}
+.background .b :nth-child(259) {
+  animation-delay: -15341.3133574342ms;
+}
+.background .r :nth-child(260) {
+  animation-delay: -15506.2199810396ms;
+}
+.background .g :nth-child(260) {
+  animation-delay: -15399.553314373ms;
+}
+.background .b :nth-child(260) {
+  animation-delay: -15292.8866477063ms;
+}
+.background .r :nth-child(261) {
+  animation-delay: -15491.1007766909ms;
+}
+.background .g :nth-child(261) {
+  animation-delay: -15384.4341100243ms;
+}
+.background .b :nth-child(261) {
+  animation-delay: -15277.7674433576ms;
+}
+.background .r :nth-child(262) {
+  animation-delay: -15537.9401744315ms;
+}
+.background .g :nth-child(262) {
+  animation-delay: -15431.2735077649ms;
+}
+.background .b :nth-child(262) {
+  animation-delay: -15324.6068410982ms;
+}
+.background .r :nth-child(263) {
+  animation-delay: -15583.9791077632ms;
+}
+.background .g :nth-child(263) {
+  animation-delay: -15477.3124410965ms;
+}
+.background .b :nth-child(263) {
+  animation-delay: -15370.6457744299ms;
+}
+.background .r :nth-child(264) {
+  animation-delay: -15628.9195227393ms;
+}
+.background .g :nth-child(264) {
+  animation-delay: -15522.2528560727ms;
+}
+.background .b :nth-child(264) {
+  animation-delay: -15415.586189406ms;
+}
+.background .r :nth-child(265) {
+  animation-delay: -15672.3091458648ms;
+}
+.background .g :nth-child(265) {
+  animation-delay: -15565.6424791981ms;
+}
+.background .b :nth-child(265) {
+  animation-delay: -15458.9758125315ms;
+}
+.background .r :nth-child(266) {
+  animation-delay: -15713.4426608564ms;
+}
+.background .g :nth-child(266) {
+  animation-delay: -15606.7759941897ms;
+}
+.background .b :nth-child(266) {
+  animation-delay: -15500.1093275231ms;
+}
+.background .r :nth-child(267) {
+  animation-delay: -15751.1985554631ms;
+}
+.background .g :nth-child(267) {
+  animation-delay: -15644.5318887965ms;
+}
+.background .b :nth-child(267) {
+  animation-delay: -15537.8652221298ms;
+}
+.background .r :nth-child(268) {
+  animation-delay: -15783.7999850982ms;
+}
+.background .g :nth-child(268) {
+  animation-delay: -15677.1333184315ms;
+}
+.background .b :nth-child(268) {
+  animation-delay: -15570.4666517648ms;
+}
+.background .r :nth-child(269) {
+  animation-delay: -15808.5947452737ms;
+}
+.background .g :nth-child(269) {
+  animation-delay: -15701.928078607ms;
+}
+.background .b :nth-child(269) {
+  animation-delay: -15595.2614119404ms;
+}
+.background .r :nth-child(270) {
+  animation-delay: -15822.2846824737ms;
+}
+.background .g :nth-child(270) {
+  animation-delay: -15715.618015807ms;
+}
+.background .b :nth-child(270) {
+  animation-delay: -15608.9513491403ms;
+}
+.background .r :nth-child(271) {
+  animation-delay: -15822.2846824737ms;
+}
+.background .g :nth-child(271) {
+  animation-delay: -15715.618015807ms;
+}
+.background .b :nth-child(271) {
+  animation-delay: -15608.9513491403ms;
+}
+.background .r :nth-child(272) {
+  animation-delay: -15808.5947452737ms;
+}
+.background .g :nth-child(272) {
+  animation-delay: -15701.928078607ms;
+}
+.background .b :nth-child(272) {
+  animation-delay: -15595.2614119404ms;
+}
+.background .r :nth-child(273) {
+  animation-delay: -15783.7999850982ms;
+}
+.background .g :nth-child(273) {
+  animation-delay: -15677.1333184315ms;
+}
+.background .b :nth-child(273) {
+  animation-delay: -15570.4666517648ms;
+}
+.background .r :nth-child(274) {
+  animation-delay: -15751.1985554631ms;
+}
+.background .g :nth-child(274) {
+  animation-delay: -15644.5318887965ms;
+}
+.background .b :nth-child(274) {
+  animation-delay: -15537.8652221298ms;
+}
+.background .r :nth-child(275) {
+  animation-delay: -15713.4426608564ms;
+}
+.background .g :nth-child(275) {
+  animation-delay: -15606.7759941897ms;
+}
+.background .b :nth-child(275) {
+  animation-delay: -15500.1093275231ms;
+}
+.background .r :nth-child(276) {
+  animation-delay: -15672.3091458648ms;
+}
+.background .g :nth-child(276) {
+  animation-delay: -15565.6424791981ms;
+}
+.background .b :nth-child(276) {
+  animation-delay: -15458.9758125315ms;
+}
+.background .r :nth-child(277) {
+  animation-delay: -15628.9195227393ms;
+}
+.background .g :nth-child(277) {
+  animation-delay: -15522.2528560727ms;
+}
+.background .b :nth-child(277) {
+  animation-delay: -15415.586189406ms;
+}
+.background .r :nth-child(278) {
+  animation-delay: -15583.9791077632ms;
+}
+.background .g :nth-child(278) {
+  animation-delay: -15477.3124410965ms;
+}
+.background .b :nth-child(278) {
+  animation-delay: -15370.6457744299ms;
+}
+.background .r :nth-child(279) {
+  animation-delay: -15537.9401744315ms;
+}
+.background .g :nth-child(279) {
+  animation-delay: -15431.2735077649ms;
+}
+.background .b :nth-child(279) {
+  animation-delay: -15324.6068410982ms;
+}
+.background .r :nth-child(280) {
+  animation-delay: -15491.1007766909ms;
+}
+.background .g :nth-child(280) {
+  animation-delay: -15384.4341100243ms;
+}
+.background .b :nth-child(280) {
+  animation-delay: -15277.7674433576ms;
+}
+.background .r :nth-child(281) {
+  animation-delay: -15471.6143744404ms;
+}
+.background .g :nth-child(281) {
+  animation-delay: -15364.9477077737ms;
+}
+.background .b :nth-child(281) {
+  animation-delay: -15258.2810411071ms;
+}
+.background .r :nth-child(282) {
+  animation-delay: -15516.562069943ms;
+}
+.background .g :nth-child(282) {
+  animation-delay: -15409.8954032763ms;
+}
+.background .b :nth-child(282) {
+  animation-delay: -15303.2287366097ms;
+}
+.background .r :nth-child(283) {
+  animation-delay: -15560.3565847292ms;
+}
+.background .g :nth-child(283) {
+  animation-delay: -15453.6899180626ms;
+}
+.background .b :nth-child(283) {
+  animation-delay: -15347.0232513959ms;
+}
+.background .r :nth-child(284) {
+  animation-delay: -15602.6164693682ms;
+}
+.background .g :nth-child(284) {
+  animation-delay: -15495.9498027015ms;
+}
+.background .b :nth-child(284) {
+  animation-delay: -15389.2831360348ms;
+}
+.background .r :nth-child(285) {
+  animation-delay: -15642.7966325785ms;
+}
+.background .g :nth-child(285) {
+  animation-delay: -15536.1299659118ms;
+}
+.background .b :nth-child(285) {
+  animation-delay: -15429.4632992451ms;
+}
+.background .r :nth-child(286) {
+  animation-delay: -15680.1124284526ms;
+}
+.background .g :nth-child(286) {
+  animation-delay: -15573.4457617859ms;
+}
+.background .b :nth-child(286) {
+  animation-delay: -15466.7790951193ms;
+}
+.background .r :nth-child(287) {
+  animation-delay: -15713.4426608564ms;
+}
+.background .g :nth-child(287) {
+  animation-delay: -15606.7759941897ms;
+}
+.background .b :nth-child(287) {
+  animation-delay: -15500.1093275231ms;
+}
+.background .r :nth-child(288) {
+  animation-delay: -15741.24259188ms;
+}
+.background .g :nth-child(288) {
+  animation-delay: -15634.5759252133ms;
+}
+.background .b :nth-child(288) {
+  animation-delay: -15527.9092585467ms;
+}
+.background .r :nth-child(289) {
+  animation-delay: -15761.5698816209ms;
+}
+.background .g :nth-child(289) {
+  animation-delay: -15654.9032149542ms;
+}
+.background .b :nth-child(289) {
+  animation-delay: -15548.2365482876ms;
+}
+.background .r :nth-child(290) {
+  animation-delay: -15772.4133485968ms;
+}
+.background .g :nth-child(290) {
+  animation-delay: -15665.7466819301ms;
+}
+.background .b :nth-child(290) {
+  animation-delay: -15559.0800152635ms;
+}
+.background .r :nth-child(291) {
+  animation-delay: -15772.4133485968ms;
+}
+.background .g :nth-child(291) {
+  animation-delay: -15665.7466819301ms;
+}
+.background .b :nth-child(291) {
+  animation-delay: -15559.0800152635ms;
+}
+.background .r :nth-child(292) {
+  animation-delay: -15761.5698816209ms;
+}
+.background .g :nth-child(292) {
+  animation-delay: -15654.9032149542ms;
+}
+.background .b :nth-child(292) {
+  animation-delay: -15548.2365482876ms;
+}
+.background .r :nth-child(293) {
+  animation-delay: -15741.24259188ms;
+}
+.background .g :nth-child(293) {
+  animation-delay: -15634.5759252133ms;
+}
+.background .b :nth-child(293) {
+  animation-delay: -15527.9092585467ms;
+}
+.background .r :nth-child(294) {
+  animation-delay: -15713.4426608564ms;
+}
+.background .g :nth-child(294) {
+  animation-delay: -15606.7759941897ms;
+}
+.background .b :nth-child(294) {
+  animation-delay: -15500.1093275231ms;
+}
+.background .r :nth-child(295) {
+  animation-delay: -15680.1124284526ms;
+}
+.background .g :nth-child(295) {
+  animation-delay: -15573.4457617859ms;
+}
+.background .b :nth-child(295) {
+  animation-delay: -15466.7790951193ms;
+}
+.background .r :nth-child(296) {
+  animation-delay: -15642.7966325785ms;
+}
+.background .g :nth-child(296) {
+  animation-delay: -15536.1299659118ms;
+}
+.background .b :nth-child(296) {
+  animation-delay: -15429.4632992451ms;
+}
+.background .r :nth-child(297) {
+  animation-delay: -15602.6164693682ms;
+}
+.background .g :nth-child(297) {
+  animation-delay: -15495.9498027015ms;
+}
+.background .b :nth-child(297) {
+  animation-delay: -15389.2831360348ms;
+}
+.background .r :nth-child(298) {
+  animation-delay: -15560.3565847292ms;
+}
+.background .g :nth-child(298) {
+  animation-delay: -15453.6899180626ms;
+}
+.background .b :nth-child(298) {
+  animation-delay: -15347.0232513959ms;
+}
+.background .r :nth-child(299) {
+  animation-delay: -15516.562069943ms;
+}
+.background .g :nth-child(299) {
+  animation-delay: -15409.8954032763ms;
+}
+.background .b :nth-child(299) {
+  animation-delay: -15303.2287366097ms;
+}
+.background .r :nth-child(300) {
+  animation-delay: -15471.6143744404ms;
+}
+.background .g :nth-child(300) {
+  animation-delay: -15364.9477077737ms;
+}
+.background .b :nth-child(300) {
+  animation-delay: -15258.2810411071ms;
+}
+.background .r :nth-child(301) {
+  animation-delay: -15448.223272904ms;
+}
+.background .g :nth-child(301) {
+  animation-delay: -15341.5566062373ms;
+}
+.background .b :nth-child(301) {
+  animation-delay: -15234.8899395706ms;
+}
+.background .r :nth-child(302) {
+  animation-delay: -15491.1007766909ms;
+}
+.background .g :nth-child(302) {
+  animation-delay: -15384.4341100243ms;
+}
+.background .b :nth-child(302) {
+  animation-delay: -15277.7674433576ms;
+}
+.background .r :nth-child(303) {
+  animation-delay: -15532.503989474ms;
+}
+.background .g :nth-child(303) {
+  animation-delay: -15425.8373228073ms;
+}
+.background .b :nth-child(303) {
+  animation-delay: -15319.1706561407ms;
+}
+.background .r :nth-child(304) {
+  animation-delay: -15572.0048391813ms;
+}
+.background .g :nth-child(304) {
+  animation-delay: -15465.3381725146ms;
+}
+.background .b :nth-child(304) {
+  animation-delay: -15358.671505848ms;
+}
+.background .r :nth-child(305) {
+  animation-delay: -15609.0263014421ms;
+}
+.background .g :nth-child(305) {
+  animation-delay: -15502.3596347754ms;
+}
+.background .b :nth-child(305) {
+  animation-delay: -15395.6929681087ms;
+}
+.background .r :nth-child(306) {
+  animation-delay: -15642.7966325785ms;
+}
+.background .g :nth-child(306) {
+  animation-delay: -15536.1299659118ms;
+}
+.background .b :nth-child(306) {
+  animation-delay: -15429.4632992451ms;
+}
+.background .r :nth-child(307) {
+  animation-delay: -15672.3091458648ms;
+}
+.background .g :nth-child(307) {
+  animation-delay: -15565.6424791981ms;
+}
+.background .b :nth-child(307) {
+  animation-delay: -15458.9758125315ms;
+}
+.background .r :nth-child(308) {
+  animation-delay: -15696.3199322909ms;
+}
+.background .g :nth-child(308) {
+  animation-delay: -15589.6532656243ms;
+}
+.background .b :nth-child(308) {
+  animation-delay: -15482.9865989576ms;
+}
+.background .r :nth-child(309) {
+  animation-delay: -15713.4426608564ms;
+}
+.background .g :nth-child(309) {
+  animation-delay: -15606.7759941897ms;
+}
+.background .b :nth-child(309) {
+  animation-delay: -15500.1093275231ms;
+}
+.background .r :nth-child(310) {
+  animation-delay: -15722.3997997773ms;
+}
+.background .g :nth-child(310) {
+  animation-delay: -15615.7331331106ms;
+}
+.background .b :nth-child(310) {
+  animation-delay: -15509.0664664439ms;
+}
+.background .r :nth-child(311) {
+  animation-delay: -15722.3997997773ms;
+}
+.background .g :nth-child(311) {
+  animation-delay: -15615.7331331106ms;
+}
+.background .b :nth-child(311) {
+  animation-delay: -15509.0664664439ms;
+}
+.background .r :nth-child(312) {
+  animation-delay: -15713.4426608564ms;
+}
+.background .g :nth-child(312) {
+  animation-delay: -15606.7759941897ms;
+}
+.background .b :nth-child(312) {
+  animation-delay: -15500.1093275231ms;
+}
+.background .r :nth-child(313) {
+  animation-delay: -15696.3199322909ms;
+}
+.background .g :nth-child(313) {
+  animation-delay: -15589.6532656243ms;
+}
+.background .b :nth-child(313) {
+  animation-delay: -15482.9865989576ms;
+}
+.background .r :nth-child(314) {
+  animation-delay: -15672.3091458648ms;
+}
+.background .g :nth-child(314) {
+  animation-delay: -15565.6424791981ms;
+}
+.background .b :nth-child(314) {
+  animation-delay: -15458.9758125315ms;
+}
+.background .r :nth-child(315) {
+  animation-delay: -15642.7966325785ms;
+}
+.background .g :nth-child(315) {
+  animation-delay: -15536.1299659118ms;
+}
+.background .b :nth-child(315) {
+  animation-delay: -15429.4632992451ms;
+}
+.background .r :nth-child(316) {
+  animation-delay: -15609.0263014421ms;
+}
+.background .g :nth-child(316) {
+  animation-delay: -15502.3596347754ms;
+}
+.background .b :nth-child(316) {
+  animation-delay: -15395.6929681087ms;
+}
+.background .r :nth-child(317) {
+  animation-delay: -15572.0048391813ms;
+}
+.background .g :nth-child(317) {
+  animation-delay: -15465.3381725146ms;
+}
+.background .b :nth-child(317) {
+  animation-delay: -15358.671505848ms;
+}
+.background .r :nth-child(318) {
+  animation-delay: -15532.503989474ms;
+}
+.background .g :nth-child(318) {
+  animation-delay: -15425.8373228073ms;
+}
+.background .b :nth-child(318) {
+  animation-delay: -15319.1706561407ms;
+}
+.background .r :nth-child(319) {
+  animation-delay: -15491.1007766909ms;
+}
+.background .g :nth-child(319) {
+  animation-delay: -15384.4341100243ms;
+}
+.background .b :nth-child(319) {
+  animation-delay: -15277.7674433576ms;
+}
+.background .r :nth-child(320) {
+  animation-delay: -15448.223272904ms;
+}
+.background .g :nth-child(320) {
+  animation-delay: -15341.5566062373ms;
+}
+.background .b :nth-child(320) {
+  animation-delay: -15234.8899395706ms;
+}
+.background .r :nth-child(321) {
+  animation-delay: -15421.400845762ms;
+}
+.background .g :nth-child(321) {
+  animation-delay: -15314.7341790953ms;
+}
+.background .b :nth-child(321) {
+  animation-delay: -15208.0675124287ms;
+}
+.background .r :nth-child(322) {
+  animation-delay: -15462.1358496751ms;
+}
+.background .g :nth-child(322) {
+  animation-delay: -15355.4691830084ms;
+}
+.background .b :nth-child(322) {
+  animation-delay: -15248.8025163418ms;
+}
+.background .r :nth-child(323) {
+  animation-delay: -15501.1293308102ms;
+}
+.background .g :nth-child(323) {
+  animation-delay: -15394.4626641435ms;
+}
+.background .b :nth-child(323) {
+  animation-delay: -15287.7959974769ms;
+}
+.background .r :nth-child(324) {
+  animation-delay: -15537.9401744315ms;
+}
+.background .g :nth-child(324) {
+  animation-delay: -15431.2735077649ms;
+}
+.background .b :nth-child(324) {
+  animation-delay: -15324.6068410982ms;
+}
+.background .r :nth-child(325) {
+  animation-delay: -15572.0048391813ms;
+}
+.background .g :nth-child(325) {
+  animation-delay: -15465.3381725146ms;
+}
+.background .b :nth-child(325) {
+  animation-delay: -15358.671505848ms;
+}
+.background .r :nth-child(326) {
+  animation-delay: -15602.6164693682ms;
+}
+.background .g :nth-child(326) {
+  animation-delay: -15495.9498027015ms;
+}
+.background .b :nth-child(326) {
+  animation-delay: -15389.2831360348ms;
+}
+.background .r :nth-child(327) {
+  animation-delay: -15628.9195227393ms;
+}
+.background .g :nth-child(327) {
+  animation-delay: -15522.2528560727ms;
+}
+.background .b :nth-child(327) {
+  animation-delay: -15415.586189406ms;
+}
+.background .r :nth-child(328) {
+  animation-delay: -15649.9414216964ms;
+}
+.background .g :nth-child(328) {
+  animation-delay: -15543.2747550298ms;
+}
+.background .b :nth-child(328) {
+  animation-delay: -15436.6080883631ms;
+}
+.background .r :nth-child(329) {
+  animation-delay: -15664.6874095158ms;
+}
+.background .g :nth-child(329) {
+  animation-delay: -15558.0207428492ms;
+}
+.background .b :nth-child(329) {
+  animation-delay: -15451.3540761825ms;
+}
+.background .r :nth-child(330) {
+  animation-delay: -15672.3091458648ms;
+}
+.background .g :nth-child(330) {
+  animation-delay: -15565.6424791981ms;
+}
+.background .b :nth-child(330) {
+  animation-delay: -15458.9758125315ms;
+}
+.background .r :nth-child(331) {
+  animation-delay: -15672.3091458648ms;
+}
+.background .g :nth-child(331) {
+  animation-delay: -15565.6424791981ms;
+}
+.background .b :nth-child(331) {
+  animation-delay: -15458.9758125315ms;
+}
+.background .r :nth-child(332) {
+  animation-delay: -15664.6874095158ms;
+}
+.background .g :nth-child(332) {
+  animation-delay: -15558.0207428492ms;
+}
+.background .b :nth-child(332) {
+  animation-delay: -15451.3540761825ms;
+}
+.background .r :nth-child(333) {
+  animation-delay: -15649.9414216964ms;
+}
+.background .g :nth-child(333) {
+  animation-delay: -15543.2747550298ms;
+}
+.background .b :nth-child(333) {
+  animation-delay: -15436.6080883631ms;
+}
+.background .r :nth-child(334) {
+  animation-delay: -15628.9195227393ms;
+}
+.background .g :nth-child(334) {
+  animation-delay: -15522.2528560727ms;
+}
+.background .b :nth-child(334) {
+  animation-delay: -15415.586189406ms;
+}
+.background .r :nth-child(335) {
+  animation-delay: -15602.6164693682ms;
+}
+.background .g :nth-child(335) {
+  animation-delay: -15495.9498027015ms;
+}
+.background .b :nth-child(335) {
+  animation-delay: -15389.2831360348ms;
+}
+.background .r :nth-child(336) {
+  animation-delay: -15572.0048391813ms;
+}
+.background .g :nth-child(336) {
+  animation-delay: -15465.3381725146ms;
+}
+.background .b :nth-child(336) {
+  animation-delay: -15358.671505848ms;
+}
+.background .r :nth-child(337) {
+  animation-delay: -15537.9401744315ms;
+}
+.background .g :nth-child(337) {
+  animation-delay: -15431.2735077649ms;
+}
+.background .b :nth-child(337) {
+  animation-delay: -15324.6068410982ms;
+}
+.background .r :nth-child(338) {
+  animation-delay: -15501.1293308102ms;
+}
+.background .g :nth-child(338) {
+  animation-delay: -15394.4626641435ms;
+}
+.background .b :nth-child(338) {
+  animation-delay: -15287.7959974769ms;
+}
+.background .r :nth-child(339) {
+  animation-delay: -15462.1358496751ms;
+}
+.background .g :nth-child(339) {
+  animation-delay: -15355.4691830084ms;
+}
+.background .b :nth-child(339) {
+  animation-delay: -15248.8025163418ms;
+}
+.background .r :nth-child(340) {
+  animation-delay: -15421.400845762ms;
+}
+.background .g :nth-child(340) {
+  animation-delay: -15314.7341790953ms;
+}
+.background .b :nth-child(340) {
+  animation-delay: -15208.0675124287ms;
+}
+.background .r :nth-child(341) {
+  animation-delay: -15391.6007532397ms;
+}
+.background .g :nth-child(341) {
+  animation-delay: -15284.9340865731ms;
+}
+.background .b :nth-child(341) {
+  animation-delay: -15178.2674199064ms;
+}
+.background .r :nth-child(342) {
+  animation-delay: -15430.201345756ms;
+}
+.background .g :nth-child(342) {
+  animation-delay: -15323.5346790894ms;
+}
+.background .b :nth-child(342) {
+  animation-delay: -15216.8680124227ms;
+}
+.background .r :nth-child(343) {
+  animation-delay: -15466.854047421ms;
+}
+.background .g :nth-child(343) {
+  animation-delay: -15360.1873807543ms;
+}
+.background .b :nth-child(343) {
+  animation-delay: -15253.5207140877ms;
+}
+.background .r :nth-child(344) {
+  animation-delay: -15501.1293308102ms;
+}
+.background .g :nth-child(344) {
+  animation-delay: -15394.4626641435ms;
+}
+.background .b :nth-child(344) {
+  animation-delay: -15287.7959974769ms;
+}
+.background .r :nth-child(345) {
+  animation-delay: -15532.503989474ms;
+}
+.background .g :nth-child(345) {
+  animation-delay: -15425.8373228073ms;
+}
+.background .b :nth-child(345) {
+  animation-delay: -15319.1706561407ms;
+}
+.background .r :nth-child(346) {
+  animation-delay: -15560.3565847292ms;
+}
+.background .g :nth-child(346) {
+  animation-delay: -15453.6899180626ms;
+}
+.background .b :nth-child(346) {
+  animation-delay: -15347.0232513959ms;
+}
+.background .r :nth-child(347) {
+  animation-delay: -15583.9791077632ms;
+}
+.background .g :nth-child(347) {
+  animation-delay: -15477.3124410965ms;
+}
+.background .b :nth-child(347) {
+  animation-delay: -15370.6457744299ms;
+}
+.background .r :nth-child(348) {
+  animation-delay: -15602.6164693682ms;
+}
+.background .g :nth-child(348) {
+  animation-delay: -15495.9498027015ms;
+}
+.background .b :nth-child(348) {
+  animation-delay: -15389.2831360348ms;
+}
+.background .r :nth-child(349) {
+  animation-delay: -15615.5429861341ms;
+}
+.background .g :nth-child(349) {
+  animation-delay: -15508.8763194674ms;
+}
+.background .b :nth-child(349) {
+  animation-delay: -15402.2096528007ms;
+}
+.background .r :nth-child(350) {
+  animation-delay: -15622.1720523077ms;
+}
+.background .g :nth-child(350) {
+  animation-delay: -15515.5053856411ms;
+}
+.background .b :nth-child(350) {
+  animation-delay: -15408.8387189744ms;
+}
+.background .r :nth-child(351) {
+  animation-delay: -15622.1720523077ms;
+}
+.background .g :nth-child(351) {
+  animation-delay: -15515.5053856411ms;
+}
+.background .b :nth-child(351) {
+  animation-delay: -15408.8387189744ms;
+}
+.background .r :nth-child(352) {
+  animation-delay: -15615.5429861341ms;
+}
+.background .g :nth-child(352) {
+  animation-delay: -15508.8763194674ms;
+}
+.background .b :nth-child(352) {
+  animation-delay: -15402.2096528007ms;
+}
+.background .r :nth-child(353) {
+  animation-delay: -15602.6164693682ms;
+}
+.background .g :nth-child(353) {
+  animation-delay: -15495.9498027015ms;
+}
+.background .b :nth-child(353) {
+  animation-delay: -15389.2831360348ms;
+}
+.background .r :nth-child(354) {
+  animation-delay: -15583.9791077632ms;
+}
+.background .g :nth-child(354) {
+  animation-delay: -15477.3124410965ms;
+}
+.background .b :nth-child(354) {
+  animation-delay: -15370.6457744299ms;
+}
+.background .r :nth-child(355) {
+  animation-delay: -15560.3565847292ms;
+}
+.background .g :nth-child(355) {
+  animation-delay: -15453.6899180626ms;
+}
+.background .b :nth-child(355) {
+  animation-delay: -15347.0232513959ms;
+}
+.background .r :nth-child(356) {
+  animation-delay: -15532.503989474ms;
+}
+.background .g :nth-child(356) {
+  animation-delay: -15425.8373228073ms;
+}
+.background .b :nth-child(356) {
+  animation-delay: -15319.1706561407ms;
+}
+.background .r :nth-child(357) {
+  animation-delay: -15501.1293308102ms;
+}
+.background .g :nth-child(357) {
+  animation-delay: -15394.4626641435ms;
+}
+.background .b :nth-child(357) {
+  animation-delay: -15287.7959974769ms;
+}
+.background .r :nth-child(358) {
+  animation-delay: -15466.854047421ms;
+}
+.background .g :nth-child(358) {
+  animation-delay: -15360.1873807543ms;
+}
+.background .b :nth-child(358) {
+  animation-delay: -15253.5207140877ms;
+}
+.background .r :nth-child(359) {
+  animation-delay: -15430.201345756ms;
+}
+.background .g :nth-child(359) {
+  animation-delay: -15323.5346790894ms;
+}
+.background .b :nth-child(359) {
+  animation-delay: -15216.8680124227ms;
+}
+.background .r :nth-child(360) {
+  animation-delay: -15391.6007532397ms;
+}
+.background .g :nth-child(360) {
+  animation-delay: -15284.9340865731ms;
+}
+.background .b :nth-child(360) {
+  animation-delay: -15178.2674199064ms;
+}
+.background .r :nth-child(361) {
+  animation-delay: -15359.2383102234ms;
+}
+.background .g :nth-child(361) {
+  animation-delay: -15252.5716435568ms;
+}
+.background .b :nth-child(361) {
+  animation-delay: -15145.9049768901ms;
+}
+.background .r :nth-child(362) {
+  animation-delay: -15395.7679204105ms;
+}
+.background .g :nth-child(362) {
+  animation-delay: -15289.1012537438ms;
+}
+.background .b :nth-child(362) {
+  animation-delay: -15182.4345870771ms;
+}
+.background .r :nth-child(363) {
+  animation-delay: -15430.201345756ms;
+}
+.background .g :nth-child(363) {
+  animation-delay: -15323.5346790894ms;
+}
+.background .b :nth-child(363) {
+  animation-delay: -15216.8680124227ms;
+}
+.background .r :nth-child(364) {
+  animation-delay: -15462.1358496751ms;
+}
+.background .g :nth-child(364) {
+  animation-delay: -15355.4691830084ms;
+}
+.background .b :nth-child(364) {
+  animation-delay: -15248.8025163418ms;
+}
+.background .r :nth-child(365) {
+  animation-delay: -15491.1007766909ms;
+}
+.background .g :nth-child(365) {
+  animation-delay: -15384.4341100243ms;
+}
+.background .b :nth-child(365) {
+  animation-delay: -15277.7674433576ms;
+}
+.background .r :nth-child(366) {
+  animation-delay: -15516.562069943ms;
+}
+.background .g :nth-child(366) {
+  animation-delay: -15409.8954032763ms;
+}
+.background .b :nth-child(366) {
+  animation-delay: -15303.2287366097ms;
+}
+.background .r :nth-child(367) {
+  animation-delay: -15537.9401744315ms;
+}
+.background .g :nth-child(367) {
+  animation-delay: -15431.2735077649ms;
+}
+.background .b :nth-child(367) {
+  animation-delay: -15324.6068410982ms;
+}
+.background .r :nth-child(368) {
+  animation-delay: -15554.6466907676ms;
+}
+.background .g :nth-child(368) {
+  animation-delay: -15447.9800241009ms;
+}
+.background .b :nth-child(368) {
+  animation-delay: -15341.3133574342ms;
+}
+.background .r :nth-child(369) {
+  animation-delay: -15566.1416185694ms;
+}
+.background .g :nth-child(369) {
+  animation-delay: -15459.4749519027ms;
+}
+.background .b :nth-child(369) {
+  animation-delay: -15352.8082852361ms;
+}
+.background .r :nth-child(370) {
+  animation-delay: -15572.0048391813ms;
+}
+.background .g :nth-child(370) {
+  animation-delay: -15465.3381725146ms;
+}
+.background .b :nth-child(370) {
+  animation-delay: -15358.671505848ms;
+}
+.background .r :nth-child(371) {
+  animation-delay: -15572.0048391813ms;
+}
+.background .g :nth-child(371) {
+  animation-delay: -15465.3381725146ms;
+}
+.background .b :nth-child(371) {
+  animation-delay: -15358.671505848ms;
+}
+.background .r :nth-child(372) {
+  animation-delay: -15566.1416185694ms;
+}
+.background .g :nth-child(372) {
+  animation-delay: -15459.4749519027ms;
+}
+.background .b :nth-child(372) {
+  animation-delay: -15352.8082852361ms;
+}
+.background .r :nth-child(373) {
+  animation-delay: -15554.6466907676ms;
+}
+.background .g :nth-child(373) {
+  animation-delay: -15447.9800241009ms;
+}
+.background .b :nth-child(373) {
+  animation-delay: -15341.3133574342ms;
+}
+.background .r :nth-child(374) {
+  animation-delay: -15537.9401744315ms;
+}
+.background .g :nth-child(374) {
+  animation-delay: -15431.2735077649ms;
+}
+.background .b :nth-child(374) {
+  animation-delay: -15324.6068410982ms;
+}
+.background .r :nth-child(375) {
+  animation-delay: -15516.562069943ms;
+}
+.background .g :nth-child(375) {
+  animation-delay: -15409.8954032763ms;
+}
+.background .b :nth-child(375) {
+  animation-delay: -15303.2287366097ms;
+}
+.background .r :nth-child(376) {
+  animation-delay: -15491.1007766909ms;
+}
+.background .g :nth-child(376) {
+  animation-delay: -15384.4341100243ms;
+}
+.background .b :nth-child(376) {
+  animation-delay: -15277.7674433576ms;
+}
+.background .r :nth-child(377) {
+  animation-delay: -15462.1358496751ms;
+}
+.background .g :nth-child(377) {
+  animation-delay: -15355.4691830084ms;
+}
+.background .b :nth-child(377) {
+  animation-delay: -15248.8025163418ms;
+}
+.background .r :nth-child(378) {
+  animation-delay: -15430.201345756ms;
+}
+.background .g :nth-child(378) {
+  animation-delay: -15323.5346790894ms;
+}
+.background .b :nth-child(378) {
+  animation-delay: -15216.8680124227ms;
+}
+.background .r :nth-child(379) {
+  animation-delay: -15395.7679204105ms;
+}
+.background .g :nth-child(379) {
+  animation-delay: -15289.1012537438ms;
+}
+.background .b :nth-child(379) {
+  animation-delay: -15182.4345870771ms;
+}
+.background .r :nth-child(380) {
+  animation-delay: -15359.2383102234ms;
+}
+.background .g :nth-child(380) {
+  animation-delay: -15252.5716435568ms;
+}
+.background .b :nth-child(380) {
+  animation-delay: -15145.9049768901ms;
+}
+.background .r :nth-child(381) {
+  animation-delay: -15324.6817933999ms;
+}
+.background .g :nth-child(381) {
+  animation-delay: -15218.0151267333ms;
+}
+.background .b :nth-child(381) {
+  animation-delay: -15111.3484600666ms;
+}
+.background .r :nth-child(382) {
+  animation-delay: -15359.2383102234ms;
+}
+.background .g :nth-child(382) {
+  animation-delay: -15252.5716435568ms;
+}
+.background .b :nth-child(382) {
+  animation-delay: -15145.9049768901ms;
+}
+.background .r :nth-child(383) {
+  animation-delay: -15391.6007532397ms;
+}
+.background .g :nth-child(383) {
+  animation-delay: -15284.9340865731ms;
+}
+.background .b :nth-child(383) {
+  animation-delay: -15178.2674199064ms;
+}
+.background .r :nth-child(384) {
+  animation-delay: -15421.400845762ms;
+}
+.background .g :nth-child(384) {
+  animation-delay: -15314.7341790953ms;
+}
+.background .b :nth-child(384) {
+  animation-delay: -15208.0675124287ms;
+}
+.background .r :nth-child(385) {
+  animation-delay: -15448.223272904ms;
+}
+.background .g :nth-child(385) {
+  animation-delay: -15341.5566062373ms;
+}
+.background .b :nth-child(385) {
+  animation-delay: -15234.8899395706ms;
+}
+.background .r :nth-child(386) {
+  animation-delay: -15471.6143744404ms;
+}
+.background .g :nth-child(386) {
+  animation-delay: -15364.9477077737ms;
+}
+.background .b :nth-child(386) {
+  animation-delay: -15258.2810411071ms;
+}
+.background .r :nth-child(387) {
+  animation-delay: -15491.1007766909ms;
+}
+.background .g :nth-child(387) {
+  animation-delay: -15384.4341100243ms;
+}
+.background .b :nth-child(387) {
+  animation-delay: -15277.7674433576ms;
+}
+.background .r :nth-child(388) {
+  animation-delay: -15506.2199810396ms;
+}
+.background .g :nth-child(388) {
+  animation-delay: -15399.553314373ms;
+}
+.background .b :nth-child(388) {
+  animation-delay: -15292.8866477063ms;
+}
+.background .r :nth-child(389) {
+  animation-delay: -15516.562069943ms;
+}
+.background .g :nth-child(389) {
+  animation-delay: -15409.8954032763ms;
+}
+.background .b :nth-child(389) {
+  animation-delay: -15303.2287366097ms;
+}
+.background .r :nth-child(390) {
+  animation-delay: -15521.8169861189ms;
+}
+.background .g :nth-child(390) {
+  animation-delay: -15415.1503194522ms;
+}
+.background .b :nth-child(390) {
+  animation-delay: -15308.4836527855ms;
+}
+.background .r :nth-child(391) {
+  animation-delay: -15521.8169861189ms;
+}
+.background .g :nth-child(391) {
+  animation-delay: -15415.1503194522ms;
+}
+.background .b :nth-child(391) {
+  animation-delay: -15308.4836527855ms;
+}
+.background .r :nth-child(392) {
+  animation-delay: -15516.562069943ms;
+}
+.background .g :nth-child(392) {
+  animation-delay: -15409.8954032763ms;
+}
+.background .b :nth-child(392) {
+  animation-delay: -15303.2287366097ms;
+}
+.background .r :nth-child(393) {
+  animation-delay: -15506.2199810396ms;
+}
+.background .g :nth-child(393) {
+  animation-delay: -15399.553314373ms;
+}
+.background .b :nth-child(393) {
+  animation-delay: -15292.8866477063ms;
+}
+.background .r :nth-child(394) {
+  animation-delay: -15491.1007766909ms;
+}
+.background .g :nth-child(394) {
+  animation-delay: -15384.4341100243ms;
+}
+.background .b :nth-child(394) {
+  animation-delay: -15277.7674433576ms;
+}
+.background .r :nth-child(395) {
+  animation-delay: -15471.6143744404ms;
+}
+.background .g :nth-child(395) {
+  animation-delay: -15364.9477077737ms;
+}
+.background .b :nth-child(395) {
+  animation-delay: -15258.2810411071ms;
+}
+.background .r :nth-child(396) {
+  animation-delay: -15448.223272904ms;
+}
+.background .g :nth-child(396) {
+  animation-delay: -15341.5566062373ms;
+}
+.background .b :nth-child(396) {
+  animation-delay: -15234.8899395706ms;
+}
+.background .r :nth-child(397) {
+  animation-delay: -15421.400845762ms;
+}
+.background .g :nth-child(397) {
+  animation-delay: -15314.7341790953ms;
+}
+.background .b :nth-child(397) {
+  animation-delay: -15208.0675124287ms;
+}
+.background .r :nth-child(398) {
+  animation-delay: -15391.6007532397ms;
+}
+.background .g :nth-child(398) {
+  animation-delay: -15284.9340865731ms;
+}
+.background .b :nth-child(398) {
+  animation-delay: -15178.2674199064ms;
+}
+.background .r :nth-child(399) {
+  animation-delay: -15359.2383102234ms;
+}
+.background .g :nth-child(399) {
+  animation-delay: -15252.5716435568ms;
+}
+.background .b :nth-child(399) {
+  animation-delay: -15145.9049768901ms;
+}
+.background .r :nth-child(400) {
+  animation-delay: -15324.6817933999ms;
+}
+.background .g :nth-child(400) {
+  animation-delay: -15218.0151267333ms;
+}
+.background .b :nth-child(400) {
+  animation-delay: -15111.3484600666ms;
+}
+
+@keyframes size-amplification {
+  from {
+    transform: scale(0.7166666667);
+  }
+  to {
+    transform: scale(0.8833333333);
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
