@@ -17,21 +17,22 @@ export const WorkPlayerView: React.FC<Props> = props => {
     iframeRef.current?.contentDocument.location.reload();
   }, [iframeRef]);
 
-  const [iframeWidth, setIframeWidth] = React.useState(1);
-  const [iframeHeight, setIframeHeight] = React.useState(1);
+  const [width, setWidth] = React.useState(1);
+  const [height, setHeight] = React.useState(1);
 
   const onResize = React.useCallback(
     (width: number, height: number) => {
-      if (width / height < DEFAULT_ASPECT_RATIO) {
-        setIframeWidth(width);
-        setIframeHeight(width / DEFAULT_ASPECT_RATIO);
-      } else {
-        setIframeWidth(height * DEFAULT_ASPECT_RATIO);
-        setIframeHeight(height);
-      }
+      setWidth(width);
+      setHeight(height);
     },
-    [setIframeWidth, setIframeHeight]
+    [setWidth, setHeight]
   );
+
+  const aspectRatio = props.work.aspectRatio || DEFAULT_ASPECT_RATIO;
+  let [iframeWidth, iframeHeight] =
+    width / height < aspectRatio
+      ? [width, width / aspectRatio]
+      : [height * aspectRatio, height];
 
   return (
     <div className="work-player">

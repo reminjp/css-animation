@@ -3,4 +3,5 @@ export interface Work {
   pageSrc: string;
   thumbnailSrc: string;
   date: string;
+  aspectRatio?: number;
 }
