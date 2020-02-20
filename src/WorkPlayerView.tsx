@@ -27,12 +27,14 @@ export const WorkPlayerView: React.FC<Props> = props => {
           </button>
         </div>
       </div>
-      <iframe
-        key={props.work?.name}
-        ref={iframeRef}
-        className="work-player__iframe"
-        src={props.work?.pageSrc}
-      ></iframe>
+      <div className="work-player__main">
+        <iframe
+          key={props.work?.name}
+          ref={iframeRef}
+          className="work-player__iframe"
+          src={props.work?.pageSrc}
+        ></iframe>
+      </div>
     </div>
   );
 };
