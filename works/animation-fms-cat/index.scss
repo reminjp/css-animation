@@ -3,24 +3,22 @@
 $duration: 32 * 40ms;
 $duration-background: $duration / 4;
 $duration-foreground: $duration / 1;
-$size: 50vh;
+$size: 100vh;
 $n: 20;
 $ease-in-out-sine: cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
+  overflow: hidden;
   background-color: #121212;
 }
 
 .fms-cat {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
   width: $size;
   height: $size;
-  border: ($size / $n) solid #212121;
+  transform: translate(-50%, -50%);
 }
 
 .foreground {
