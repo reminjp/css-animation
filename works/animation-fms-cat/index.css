@@ -1,17 +1,15 @@
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
+  overflow: hidden;
   background-color: #121212;
 }
 
 .fms-cat {
-  position: relative;
-  width: 50vh;
-  height: 50vh;
-  border: 2.5vh solid #212121;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vh;
+  height: 100vh;
+  transform: translate(-50%, -50%);
 }
 
 .foreground {
