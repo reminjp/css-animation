@@ -1,5 +1,6 @@
 $duration: 10s;
-$length-glitch: 2px;
+$length-text: 10vh;
+$length-glitch: 0.05 * $length-text;
 $color-text: #eeeeee;
 $color-background: #212121;
 
@@ -8,7 +9,7 @@ body {
   color: $color-text;
   font-family: 'Monaco', 'Consolas', 'Courier New', 'Courier', 'Yu Gothic',
     YuGothic, Verdana, Meiryo, monospace;
-  font-size: 64px;
+  font-size: 10vh;
 }
 
 .text {
