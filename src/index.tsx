@@ -3,7 +3,9 @@ import { render } from 'react-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faRedo } from '@fortawesome/free-solid-svg-icons';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import { HeaderView } from './HeaderView';
+import { HomeView } from './HomeView';
 import { Work } from './Work';
 import { WorkListView } from './WorkListView';
 import { WorkPlayerView } from './WorkPlayerView';
@@ -16,31 +18,29 @@ interface Props {
 }
 
 const App: React.FC<Props> = props => {
-  const [work, setWork] = React.useState<Work>(props.works[0]);
-
-  const setWorkWithName = React.useCallback(
-    (name: string) => {
-      setWork(props.works.find(e => e.name === name));
-    },
-    [props.works]
-  );
-
   return (
-    <div className="app">
-      <div className="app__header">
-        <HeaderView />
+    <Router>
+      <div className="app">
+        <div className="app__header">
+          <HeaderView />
+        </div>
+        <div className="app__sidebar">
+          <WorkListView works={props.works} />
+        </div>
+        <div className="app__main">
+          <Switch>
+            {props.works.map(work => (
+              <Route key={work.name} path={`/work/${work.name}/`}>
+                <WorkPlayerView work={work} />
+              </Route>
+            ))}
+            <Route path="/">
+              <HomeView />
+            </Route>
+          </Switch>
+        </div>
       </div>
-      <div className="app__sidebar">
-        <WorkListView
-          works={props.works}
-          activeWorkName={work.name}
-          onClick={setWorkWithName}
-        />
-      </div>
-      <div className="app__main">
-        <WorkPlayerView work={work} />
-      </div>
-    </div>
+    </Router>
   );
 };
 
